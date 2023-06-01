@@ -46,20 +46,18 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
-    
+
   </ul>
 </details>
 
 <!-- KEY FEATURES -->
 
 ### Key Features <a name="key-features"></a>
-
 
 - **HTML & CSS Linters integration**
 - **[More Coming Soon]**
@@ -97,7 +95,6 @@ Clone this repository to your desired folder by running this command:
   
   git clone git@github.com:BenMKT/myPortfolio.git
   ```
-
 
 ### Install
 
@@ -177,7 +174,6 @@ Feel free to check the [issues page](https://github.com/BenMKT/myPortfolio/issue
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project go ahead and rate it by giving a star ⭐️
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
