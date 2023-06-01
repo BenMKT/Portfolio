@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- Replace this logo with your own! Otherwise remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="images\mypic.jpg" alt="logo" width="70"  height="auto" />
   <br/>
 
   <h3><b>My Portfolio</b></h3>
