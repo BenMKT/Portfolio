@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- Header image logo. -->
-  <img src="images\mypic.jpg" alt="logo" width="70"  height="auto" />
+  <img src="images\Passport Photo (1).png" alt="logo" width="70"  height="auto" />
   <br/>
 
   <h3><b>My Portfolio</b></h3>
