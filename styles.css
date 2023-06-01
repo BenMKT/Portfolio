@@ -73,8 +73,8 @@ body {
 }
 
 #headerlogo a {
-    text-decoration: none;
-    color: #6070ff;
+  text-decoration: none;
+  color: #6070ff;
 }
 
 @media screen and (min-width: 375px) {
