@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon Live Demo Link](https://google.com)
+- [Live Demo Link](https://benmkt.github.io/myPortfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
