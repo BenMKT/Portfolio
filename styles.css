@@ -104,6 +104,10 @@ body {
     align-items: center;
   }
 
+  .desktop li {
+    list-style-type: none;
+  }
+
   .desktop a:hover {
     cursor: pointer;
   }
