@@ -1,121 +1,123 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Poppins, sans-serif;
-    background-color: #e5e5e5;
-    margin: 0;
+  font-family: Poppins, sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
 }
 
 #header {
-    background-image: url(images/header-shapes\ mobile.png);
-    background-size: cover;
-    background-color: #fff;
-    min-width: 100vw;
-    padding: 3rem 1.5rem 7.5rem 1.5rem;
-    border-bottom-left-radius: 5rem;
-    background-repeat: no-repeat;
-    background-position: 0 3.125rem;
-    overflow: hidden;
+  background-image: url(images/header-shapes\ mobile.png);
+  background-size: cover;
+  background-color: #fff;
+  min-width: 100vw;
+  padding: 3rem 1.5rem 7.5rem 1.5rem;
+  border-bottom-left-radius: 5rem;
+  background-repeat: no-repeat;
+  background-position: 0 3.125rem;
+  overflow: hidden;
 }
 
 #headerarticle h1 {
-    font-weight: 900;
-    font-size: 2.8125rem;
-    line-height: 3,25rem;
-    color: #172b4d;
+  font-weight: 900;
+  font-size: 2.8125rem;
+  line-height: 3.25rem;
+  color: #172b4d;
 }
 
 #headertoolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
 }
 
 #headermenubtn {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 #headermenubtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #headerarticle p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #344563;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344563;
 }
 
 #headerarticle .connect {
-    color: #7f8cff;
+  color: #7f8cff;
 }
 
 .headericons {
-    display: flex;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+  display: flex;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .headericons li {
-    margin-right: 1.1875rem;
+  margin-right: 1.1875rem;
 }
 
 #headerlogo {
-    color: #6070ff;
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
+  color: #6070ff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 @media screen and (min-width: 375px) {
-    .desktop {
-        display: none;
-    }    
+  .desktop {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
-    #headermenubtn {
-        display: none;
-    }
+  #headermenubtn {
+    display: none;
+  }
 
-    .desktop {
-        display: flex;
-    }
+  .desktop {
+    display: flex;
+  }
 
-    .desktop a {
-        text-decoration: none;
-        color:#344563;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 0.9375rem;
-        line-height: 1.25rem;
-        margin-right: 2rem;
-        display: flex;
-        align-items: center;
-    }
+  .desktop a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+  }
 
-    .desktop a:hover {
-        cursor: pointer;
-    }
+  .desktop a:hover {
+    cursor: pointer;
+  }
 
-    #header {
-        background-image: url(images/header-shapes\ desktop.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top right;
-    }
+  #header {
+    background-image: url(images/header-shapes\ desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 
-    #headerarticle {
-        display: flex;
-        flex-direction: column;
-    }
+  #headerarticle {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #headertoolbar {
-        margin-top: -1.5625rem;
-    }
+  #headertoolbar {
+    margin-top: -1.5625rem;
+  }
+
 }
