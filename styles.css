@@ -296,12 +296,8 @@ body {
     display: flex;
   }
 
-  .drop {
+  .spaceup {
     margin-top: 1.5rem;
-  }
-
-  .drop li {
-    list-style-type: none;
   }
 
   ul {
