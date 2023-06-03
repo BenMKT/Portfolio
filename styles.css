@@ -113,11 +113,6 @@ body {
     flex-direction: column;
   }
 
-  h2 {
-    font-size: 2em;
-    margin: 0;
-  }
-
   .tonic p {
     color: #344563;
     font-weight: 500;
@@ -191,6 +186,9 @@ body {
 
   .flexy {
     display: flex;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1rem;
     padding: 0 0.94em 0 0;
     align-items: baseline;
   }
@@ -209,6 +207,16 @@ body {
     padding: 0 0.625rem;
     border-radius: 0.5em;
     margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .stretch span {
+    margin-left: 16px;
+    font-size: 15px;
+    color: #253858;
+    font-weight: 500;
+    line-height: 20px;
   }
 
   .about {
@@ -243,7 +251,7 @@ body {
   .list {
     color: #000;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: bold;
   }
 
   main {
@@ -256,9 +264,9 @@ body {
     padding: 0.75rem 0;
   }
 
-  .main h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 0.125rem;
     color: #172b4d;
   }
