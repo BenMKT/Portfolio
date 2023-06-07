@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -148,5 +147,22 @@
             </div>
         </section>
     </main>
+    <section class="contact">
+        <div class="fieldset">
+            <h1>Contact me</h1>
+            <p>If you have an application you are interested in developing, a feature that you need built or a project that
+                needs
+                coding.I’d love to help with it!</p>
+            <form action="https://formspree.io/f/xpzeyzyd" method="post">
+                <label for="fname"><input type="text" name="userName" id="fname" maxlength="30" placeholder="Full Name"
+                        required></label>
+                <label for="email"><input type="email" id="email" name="userEmail" placeholder="Email" required></label>
+                <label for="messages"><textarea name="message" maxlength="500" id="messages"
+                        placeholder="Write your message here" cols="30" rows="10" required></textarea></label>
+                <button type="submit">Get in touch</button>
+            </form>
+            <hr>
+        </div>
+    </section>
 </body>
 </html>
