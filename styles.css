@@ -682,13 +682,13 @@ form {
     margin-left: 1.5rem;
   }
 
+  .stretch img {
+    margin-top: 0.625rem;
+  }
+
   .image1 img:hover {
     transform: scale(1.25);
     transition: all 2s ease-in-out;
-  }
-
-  .stretch img {
-    margin-top: 0.625rem;
   }
 
   .menu img:hover {
