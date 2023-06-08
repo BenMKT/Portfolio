@@ -570,10 +570,6 @@ form {
    margin-bottom: 1.5rem;
  }
 
- /* .stretch p {
-   margin-left: 0;
- } */
-
  .contact p {
    text-align: center;
    font-size: 1.25em;
@@ -675,11 +671,6 @@ form {
    margin-left: 1.5rem;
  }
 
- /* .last img {
-   display: block;
-   padding: 0.3125em 0;
- } */
-
  .menu img:hover {
    cursor: pointer;
  }
@@ -701,7 +692,6 @@ form {
    padding: 1.25em 0;
    font-size: 0.9375em;
    border-radius: 1.5rem;
-   /* margin-top: 8.875rem; */
  }
 
  .body1 {
@@ -746,7 +736,6 @@ form {
  header ul {
    display: flex;
    list-style-type: none;
-   /* margin-top: 1.5625rem; */
    margin-right: 7.6875rem;
  }
 
@@ -841,7 +830,6 @@ form {
    font-size: 1.25em;
    font-weight: 500;
    display: flex;
-   /* margin-top: 2.5rem; */
    flex: 0;
  }
 
