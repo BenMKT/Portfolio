@@ -675,11 +675,11 @@ form {
     border-radius: 0.5rem;
     margin-left: 1.5rem;
   }
-  
+
   .stretch img {
     margin-top: 0.625rem;
   }
-  
+
   .menu img:hover {
     cursor: pointer;
   }
@@ -868,8 +868,6 @@ form {
   .stretch span {
     margin: 0;
   }
-
-
 
   .about {
     margin-top: 0;
