@@ -677,6 +677,11 @@ form {
     margin-left: 1.5rem;
   }
 
+  /* .image1 img:hover {
+    transform: scale(1.25);
+    transition: all 2s ease-in-out;
+  } */
+
   .stretch img {
     margin-top: 0.625rem;
   }
@@ -774,6 +779,11 @@ form {
     font-size: 0.8125em;
     letter-spacing: 0.03em;
     font-weight: 500;
+    transition: 2s all ease-in;
+  }
+
+  .linkss li:hover {
+    transform: rotate(360deg);
   }
 
   button {
