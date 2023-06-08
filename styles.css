@@ -43,6 +43,47 @@ body {
   cursor: pointer;
 }
 
+.tonic p {
+  color: #344563;
+  font-weight: 500;
+}
+
+.stories p {
+  color: #344563;
+  font-weight: 500;
+}
+
+.main p {
+  font-size: 1em;
+  color: #344563;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.contact h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 6.4375rem;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.25em;
+  color: #ebebff;
+  vertical-align: top;
+  font-weight: 400;
+  width: 20.4375rem;
+  height: 8.5625rem;
+  align-self: center;
+}
+
 #headerarticle p {
   font-weight: 400;
   font-size: 1rem;
@@ -106,16 +147,6 @@ body {
 .stories {
   display: flex;
   flex-direction: column;
-}
-
-.tonic p {
-  color: #344563;
-  font-weight: 500;
-}
-
-.stories p {
-  color: #344563;
-  font-weight: 500;
 }
 
 .linkss li {
@@ -278,14 +309,7 @@ h2 {
   margin-bottom: 1.625rem;
 }
 
-.main p {
-  font-size: 1em;
-  color: #344563;
-  font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 0;
-  text-align: left;
-}
+
 
 .icons li {
   list-style-type: none;
@@ -314,31 +338,11 @@ ul {
   background-color: #fff;
 }
 
-.contact h1 {
-  color: #fff;
-  text-align: center;
-  padding-top: 6.4375rem;
-  margin: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-}
-
 #fname {
   margin-top: 3.25rem;
 }
 
-.contact p {
-  text-align: center;
-  font-size: 1.25em;
-  color: #ebebff;
-  vertical-align: top;
-  font-weight: 400;
-  width: 20.4375rem;
-  height: 8.5625rem;
-  align-self: center;
-}
+
 
 input {
   width: 100%;
@@ -442,7 +446,12 @@ form {
   .desktop {
     display: flex;
   }
-
+  
+  nav a {
+    text-decoration: none;
+    color: #344563;
+  }
+  
   .desktop a {
     text-decoration: none;
     color: #344563;
@@ -454,7 +463,12 @@ form {
     display: flex;
     align-items: center;
   }
-
+  nav li {
+    margin-left: 2rem;
+    font-size: 0.9375rem;
+    font-style: medium;
+  }
+  
   .desktop li {
     list-style-type: none;
   }
@@ -629,12 +643,6 @@ form {
     margin-top: -4.375rem;
   }
 
-  nav li {
-    margin-left: 2rem;
-    font-size: 0.9375rem;
-    font-style: medium;
-  }
-
   .icons li {
     list-style-type: none;
     display: block;
@@ -670,7 +678,11 @@ form {
     border-radius: 0.5rem;
     margin-left: 1.5rem;
   }
-
+  
+  .stretch img {
+    margin-top: 0.625rem;
+  }
+  
   .menu img:hover {
     cursor: pointer;
   }
@@ -743,10 +755,7 @@ form {
     display: block;
   }
 
-  nav a {
-    text-decoration: none;
-    color: #344563;
-  }
+
 
   .top {
     background-image: url(img/Header\ bg@2x.png);
@@ -865,9 +874,7 @@ form {
     margin: 0;
   }
 
-  .stretch img {
-    margin-top: 0.625rem;
-  }
+
 
   .about {
     margin-top: 0;
@@ -911,7 +918,7 @@ form {
     text-align: left;
     color: #172b4d;
     font-weight: 400;
- }
+  }
 
   textarea::placeholder {
     color: #b3bac5;
