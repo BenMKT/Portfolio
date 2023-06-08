@@ -133,6 +133,7 @@ body {
   padding: 1.25em 0;
   font-size: 0.9375em;
   border-radius: 1em;
+  margin: 1;
 }
 
 .body1 {
@@ -436,6 +437,10 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    min-width: fit-content;
+  }
+
   #headermenubtn {
     display: none;
   }
@@ -493,7 +498,7 @@ form {
   }
 
   #headertoolbar {
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     display: flex;
     align-items: baseline;
   }
@@ -681,6 +686,11 @@ form {
     margin-top: 0.625rem;
   }
 
+  .image1 img:hover {
+    transform: scale(1.25);
+    transition: all 2s ease-in-out;
+  }
+
   .menu img:hover {
     cursor: pointer;
   }
@@ -774,6 +784,11 @@ form {
     font-size: 0.8125em;
     letter-spacing: 0.03em;
     font-weight: 500;
+    transition: 2s all ease-in;
+  }
+
+  .linkss li:hover {
+    transform: rotate(360deg);
   }
 
   button {
@@ -884,6 +899,7 @@ form {
   .contact {
     background-color: #fff;
     margin-top: -18.5rem;
+    min-width: fit-content;
   }
 
   #fname {
