@@ -133,6 +133,7 @@ body {
   padding: 1.25em 0;
   font-size: 0.9375em;
   border-radius: 1em;
+  margin: 1;
 }
 
 .body1 {
@@ -436,6 +437,10 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    min-width: fit-content;
+  }
+
   #headermenubtn {
     display: none;
   }
@@ -493,7 +498,7 @@ form {
   }
 
   #headertoolbar {
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     display: flex;
     align-items: baseline;
   }
@@ -894,6 +899,7 @@ form {
   .contact {
     background-color: #fff;
     margin-top: -18.5rem;
+    min-width: fit-content;
   }
 
   #fname {
