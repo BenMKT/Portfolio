@@ -10,7 +10,7 @@ body {
 
 #header {
   background-image: url(images/header-shapes\ mobile.png);
-  background-size: cover;
+  background-size: 100% 85%;
   background-color: #fff;
   min-width: 100vw;
   padding: 3rem 1.5rem 7.5rem 1.5rem;
@@ -43,6 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8rem;
+  margin-top: -1.875rem;
 }
 
 #headermenubtn {
@@ -238,11 +239,11 @@ i:hover {
 }
 
 .stretch span {
-  margin-left: 16px;
-  font-size: 15px;
+  margin-left: 1rem;
+  font-size: 0.9375rem;
   color: #253858;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .about {
@@ -486,19 +487,19 @@ form {
   #headerarticle {
     display: flex;
     flex-direction: column;
-    margin-left: 260px;
-    width: 920px;
-    margin-bottom: 80px;
+    margin-left: 16.25rem;
+    width: 57.5rem;
+    margin-bottom: 5rem;
   }
 
   #headertoolbar {
-    margin-top: -40px;
+    margin-top: -2.5rem;
     display: flex;
     align-items: baseline;
   }
 
   #headerlogo a {
-    margin-left: 160px;
+    margin-left: 10rem;
   }
 
   .logo {
@@ -615,7 +616,7 @@ form {
     padding: 5em 1.5em 0;
     border-top-right-radius: 6.25rem;
     flex-direction: row;
-    margin-bottom: -200px;
+    margin-bottom: -12.5rem;
   }
 
   .content {
