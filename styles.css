@@ -430,64 +430,64 @@ form {
 
 @media screen and (min-width: 375px) {
   .desktop {
-     display: none;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   #headermenubtn {
-     display: none;
+    display: none;
   }
 
   .desktop {
-     display: flex;
+    display: flex;
   }
 
   .desktop a {
-     text-decoration: none;
-     color: #344563;
-     font-weight: 500;
-     font-style: normal;
-     font-size: 0.9375rem;
-     line-height: 1.25rem;
-     margin-right: 2rem;
-     display: flex;
-     align-items: center;
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
   }
 
   .desktop li {
-     list-style-type: none;
+    list-style-type: none;
   }
 
   .desktop a:hover {
-     cursor: pointer;
+    cursor: pointer;
   }
 
   #header {
-     background-image: url(images/header-shapes\ desktop.png);
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
-     display: flex;
-     flex-direction: column;
+    background-image: url(images/header-shapes\ desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
   }
 
   #headerarticle {
-     display: flex;
-     flex-direction: column;
-     margin-left: 260px;
-     width: 920px;
-     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 260px;
+    width: 920px;
+    margin-bottom: 80px;
   }
 
   #headertoolbar {
-     margin-top: -40px;
-     display: flex;
-     align-items: baseline;
+    margin-top: -40px;
+    display: flex;
+    align-items: baseline;
   }
 
   #headerlogo a {
-     margin-left: 160px;
+    margin-left: 160px;
   }
 
  .logo {
