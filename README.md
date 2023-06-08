@@ -144,8 +144,8 @@ Example:
 
 👤 **Benson Kiai:**
 
-- GitHub: [@BenMKT](https://github.com/BenMKT/Portfolio)
-- linkedin: [@BenK](www.linkedin.com/in/bensonkiai)
+- GitHub: [@BenMKT](https://github.com/BenMKT/myPortfolio)
+- Linkedin: [@BenK](https://www.linkedin.com/in/bensonkiai)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
