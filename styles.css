@@ -20,6 +20,13 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+  color: #172b4d;
+}
+
 .contact h2 {
   color: #fff;
   text-align: center;
@@ -288,13 +295,6 @@ main {
   padding: 0.75rem 0;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.125rem;
-  color: #172b4d;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -530,6 +530,11 @@ form {
     letter-spacing: 0;
   }
 
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+
   .contact h2 {
     color: white;
     text-align: center;
@@ -743,10 +748,7 @@ form {
     margin-right: 1.5rem;
   }
 
-  h2 {
-    font-size: 2em;
-    margin: 0;
-  }
+
 
   header {
     display: flex;
