@@ -458,13 +458,13 @@ form {
 
   .nav-menu ul {
     list-style-type: none;
-    padding-left: 28px;
+    padding-left: 1.75rem;
     display: flex;
     flex-direction: column;
   }
 
   .nav-menu li {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .nav-link {
@@ -486,7 +486,7 @@ form {
   }
 
   .nav-menu {
-    display: none
+    display: none;
   }
 
   .desktop {
