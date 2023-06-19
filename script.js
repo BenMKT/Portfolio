@@ -15,7 +15,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 navLink.forEach((navLink) => {
-  navLink.addEventListener("click", () => {
-    navMenu.style.display = "none";
+  navLink.addEventListener('click', () => {
+    navMenu.style.display = 'none';
   });
 });
