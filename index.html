@@ -21,6 +21,14 @@
                 </ul>
             </nav>
         </div>
+        <div class="nav-menu">
+          <button id="close-btn" type="button"><img src="images/Close-Icon.png" alt="close-btn"></button>
+          <ul>
+            <li><a class="nav-link" href="#works">Portfolio</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
         <section id="headerarticle">
             <h1>I’m Benson.<br>Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -35,7 +43,7 @@
         </section> 
     </header>
     <main>
-        <section class="grid-container works">
+        <section id="works" class="grid-container works">
             <article class="grid-item1 tonic">
                 <div class="image1">
                     <img src="images/Snapshoot Portfolio (1).png" alt="project snapshot 1">
@@ -119,7 +127,7 @@
                 </div>
             </article>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="main">
               <div class="content">
                 <h2>About Myself</h2>
@@ -151,7 +159,7 @@
             </div>
         </section>
     </main>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="fieldset">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that
@@ -168,5 +176,6 @@
             <hr>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
