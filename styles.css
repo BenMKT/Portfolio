@@ -429,6 +429,52 @@ form {
   padding: 0 1.25rem;
 }
 
+.popup0,
+.popup1,
+.popup2,
+.popup3 {
+  transition: 250ms ease-in-out;
+  width: 88%;
+  height: 90%;
+  /* padding: 12px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 14px;
+  z-index: 10;
+  background-color: #fff;
+  overflow-y: scroll;
+  display: block;
+}
+
+.popup0.active,
+.popup1.active,
+.popup2.active,
+.popup3.active {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 16px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  background-color: #c1c7d0;
+  backdrop-filter: blur(3px);
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (max-width: 767px) {
   .desktop {
     display: none;
@@ -472,6 +518,113 @@ form {
     font-style: normal;
     color: #fff;
     text-decoration: none;
+  }
+
+  .deskpopup {
+    display: none;
+  }
+
+  .popupContainer nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .seelive {
+    display: flex;
+  }
+
+  .popupContainer .seelive {
+    margin-top: 40px;
+    margin-bottom: -200px;
+  }
+
+  .popupContainer .body1 {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .popupContainer .image1 img {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    min-width: 95%;
+  }
+
+  .popupContainer .image1 {
+    width: 100%;
+  }
+
+  .popupContainer .linkss {
+    display: flex;
+  }
+
+  .mobilepopup {
+    display: none;
+    position: fixed;
+    width: 343px;
+    height: fit-content;
+    padding: 50px 16px;
+    background-color: #c1c7d0c5;
+    bottom: 0;
+    top: 0;
+    left: 45px;
+    right: auto;
+    z-index: 11;
+  }
+
+  .mobilepopup .image1 img {
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .mobilepopup .image1 img:hover {
+    transition: none;
+    transform: none;
+  }
+
+  #close-btn img {
+    left: 100%;
+    position: relative;
+  }
+
+  .mobilepopup nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .closepopup {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .mobilepopup .tonic {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mobilepopup .tonic p {
+    margin: -16px;
+    padding: 0;
+  }
+
+  .mobilepopup .linkss li {
+    margin-right: 8px;
+  }
+
+  .mobilepopup .linkss {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  .seelive button {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+
+  .imglive {
+    margin-left: 8px;
   }
 }
 
@@ -1049,4 +1202,106 @@ form {
     box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
     border-radius: 0.5em;
   }
+
+  .popupContainer .image1 img:hover {
+    transition: none;
+    transform: none;
+  }
+
+  /* #overlay {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  } */
+
+  .popup0,
+  .popup1,
+  .popup2,
+  .popup3 {
+    width: 90%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .popup0.active,
+  .popup1.active,
+  .popup2.active,
+  .popup3.active {
+    transform: translate(-50%, -50%) scale(1);
+    padding: 24px;
+  }
+
+  .popup0 .tonic,
+  .popup1 .tonic,
+  .popup2 .tonic,
+  .popup3 .tonic {
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    width: 100%;
+  }
+
+  .popup0 nav,
+  .popup1 nav,
+  .popup2 nav,
+  .popup3 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -160px;
+  }
+
+  .popup0 .closepopup,
+  .popup1 .closepopup,
+  .popup2 .closepopup,
+  .popup3 .closepopup {
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  .popup0 .image1,
+  .popup1 .image1,
+  .popup2 .image1,
+  .popup3 .image1 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  } 
+
+  .popup0 .image1 img,
+  .popup1 .image1 img,
+  .popup2 .image1 img,
+  .popup3 .image1 img {
+    min-width: 100%;
+    height: 500px;
+    margin-left: 0;
+    margin-top: 36px;
+    margin-bottom: -40px;
+  } 
+
+  .popup0 .body1,
+  .popup1 .body1,
+  .popup2 .body1,
+  .popup3 .body1 {
+    padding-left: 0;
+    width: 700px;
+    height: 271px;
+  }
+
+   .popup0 .poplistbtn,
+   .popup1 .poplistbtn,
+   .popup2 .poplistbtn,
+   .popup3 .poplistbtn {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     position: relative;
+     width: 300px;
+     top: -150px;
+     left: 70%;
+   }
 }
