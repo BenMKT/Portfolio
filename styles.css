@@ -140,7 +140,6 @@ h2 {
   padding: 1.25em 0;
   font-size: 0.9375em;
   border-radius: 1em;
-  margin: 1;
 }
 
 .body1 {
@@ -769,7 +768,7 @@ form {
   }
 
   .single {
-    margin-bottom: -5.3125rem;
+    margin-bottom: 3rem;
   }
 
   .tonic {
