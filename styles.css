@@ -436,12 +436,11 @@ form {
   transition: 250ms ease-in-out;
   width: 88%;
   height: 90%;
-  /* padding: 12px; */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  border-radius: 14px;
+  border-radius: 0.785rem;
   z-index: 10;
   background-color: #fff;
   overflow-y: scroll;
@@ -453,7 +452,7 @@ form {
 .popup2.active,
 .popup3.active {
   transform: translate(-50%, -50%) scale(1);
-  padding: 16px;
+  padding: 1rem;
 }
 
 #overlay {
@@ -529,13 +528,9 @@ form {
     justify-content: space-between;
   }
 
-  .seelive {
-    display: flex;
-  }
-
   .popupContainer .seelive {
-    margin-top: 40px;
-    margin-bottom: -200px;
+    margin-top: 2.5rem;
+    margin-bottom: -12.5rem;
   }
 
   .popupContainer .body1 {
@@ -544,8 +539,8 @@ form {
   }
 
   .popupContainer .image1 img {
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin-top: 1.25rem;
+    margin-bottom: -1.25rem;
     min-width: 95%;
   }
 
@@ -557,74 +552,24 @@ form {
     display: flex;
   }
 
-  .mobilepopup {
-    display: none;
-    position: fixed;
-    width: 343px;
-    height: fit-content;
-    padding: 50px 16px;
-    background-color: #c1c7d0c5;
-    bottom: 0;
-    top: 0;
-    left: 45px;
-    right: auto;
-    z-index: 11;
-  }
-
-  .mobilepopup .image1 img {
-    margin-top: 20px;
-    border-radius: 8px;
-  }
-
-  .mobilepopup .image1 img:hover {
-    transition: none;
-    transform: none;
-  }
-
   #close-btn img {
-    left: 100%;
     position: relative;
-  }
-
-  .mobilepopup nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
   }
 
   .closepopup {
     border: none;
     outline: none;
     margin: 0;
-    padding-right: 10px;
-  }
-
-  .mobilepopup .tonic {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .mobilepopup .tonic p {
-    margin: -16px;
-    padding: 0;
-  }
-
-  .mobilepopup .linkss li {
-    margin-right: 8px;
-  }
-
-  .mobilepopup .linkss {
-    display: flex;
-    margin-top: 12px;
+    padding-right: 0.625rem;
   }
 
   .seelive button {
-    font-size: 15px;
-    margin-right: 8px;
+    font-size: 0.9375rem;
+    margin-right: 0.5rem;
   }
 
   .imglive {
-    margin-left: 8px;
+    margin-left: 0.5rem;
   }
 }
 
@@ -1208,19 +1153,10 @@ form {
     transform: none;
   }
 
-  /* #overlay {
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: 10%;
-  } */
-
   .popup0,
   .popup1,
   .popup2,
   .popup3 {
-    width: 90%;
-    height: auto;
     padding-bottom: 0;
   }
 
@@ -1229,7 +1165,7 @@ form {
   .popup2.active,
   .popup3.active {
     transform: translate(-50%, -50%) scale(1);
-    padding: 24px;
+    padding: 0 1.5rem;
   }
 
   .popup0 .tonic,
@@ -1238,8 +1174,9 @@ form {
   .popup3 .tonic {
     display: flex;
     flex-direction: column;
-    /* padding: 24px; */
+    margin-bottom: -11.25rem;
     width: 100%;
+    height: auto;
   }
 
   .popup0 nav,
@@ -1249,7 +1186,6 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: -160px;
   }
 
   .popup0 .closepopup,
@@ -1259,8 +1195,8 @@ form {
     border: none;
     outline: none;
     margin: 0;
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 
   .popup0 .image1,
@@ -1268,7 +1204,7 @@ form {
   .popup2 .image1,
   .popup3 .image1 {
     width: 100%;
-    height: auto;
+    height: 5;
     margin-left: 0;
   } 
 
@@ -1277,10 +1213,10 @@ form {
   .popup2 .image1 img,
   .popup3 .image1 img {
     min-width: 100%;
-    height: 500px;
+    min-height: 46.875rem;
     margin-left: 0;
-    margin-top: 36px;
-    margin-bottom: -40px;
+    margin-top: 2.25rem;
+    margin-bottom: -2.5rem;
   } 
 
   .popup0 .body1,
@@ -1288,8 +1224,9 @@ form {
   .popup2 .body1,
   .popup3 .body1 {
     padding-left: 0;
-    width: 700px;
-    height: 271px;
+    width: 48.625rem;
+    height: 16.9375rem;
+    margin-bottom: 0;
   }
 
    .popup0 .poplistbtn,
@@ -1300,8 +1237,8 @@ form {
      flex-direction: column;
      align-items: flex-start;
      position: relative;
-     width: 300px;
-     top: -150px;
-     left: 70%;
+     width: 18.75rem;
+     top: -13.75rem;
+     left: 64%;
    }
 }
