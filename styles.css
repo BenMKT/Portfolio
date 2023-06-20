@@ -1148,6 +1148,17 @@ form {
     border-radius: 0.5em;
   }
 
+  .popup0 .image1 img,
+  .popup1 .image1 img,
+  .popup2 .image1 img,
+  .popup3 .image1 img {
+    min-width: 100%;
+    min-height: 46.875rem;
+    margin-left: 0;
+    margin-top: 2.25rem;
+    margin-bottom: -2.5rem;
+  }
+
   .popupContainer .image1 img:hover {
     transition: none;
     transform: none;
@@ -1206,18 +1217,7 @@ form {
     width: 100%;
     height: 5;
     margin-left: 0;
-  } 
-
-  .popup0 .image1 img,
-  .popup1 .image1 img,
-  .popup2 .image1 img,
-  .popup3 .image1 img {
-    min-width: 100%;
-    min-height: 46.875rem;
-    margin-left: 0;
-    margin-top: 2.25rem;
-    margin-bottom: -2.5rem;
-  } 
+  }
 
   .popup0 .body1,
   .popup1 .body1,
@@ -1229,16 +1229,16 @@ form {
     margin-bottom: 0;
   }
 
-   .popup0 .poplistbtn,
-   .popup1 .poplistbtn,
-   .popup2 .poplistbtn,
-   .popup3 .poplistbtn {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     position: relative;
-     width: 18.75rem;
-     top: -13.75rem;
-     left: 64%;
-   }
+  .popup0 .poplistbtn,
+  .popup1 .poplistbtn,
+  .popup2 .poplistbtn,
+  .popup3 .poplistbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 18.75rem;
+    top: -13.75rem;
+    left: 64%;
+  }
 }
