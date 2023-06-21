@@ -358,6 +358,30 @@ input::placeholder {
   font-weight: 400;
 }
 
+/* This is our style for the invalid fields */
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+}
+
+.error .active {
+  padding: 0.3rem;
+}
+
 textarea::placeholder {
   color: #b3bac5;
   font-size: 0.9375em;
