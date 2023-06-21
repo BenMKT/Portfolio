@@ -258,14 +258,11 @@ cancelbtn.forEach((button) => {
   });
 });
 
-const email = document.getElementById("email");
-
-email.addEventListener("input", (event) => {
-
+const email = document.getElementById('email');
+email.addEventListener('input', () => {
   if (email.validity.patternMismatch) {
-    email.setCustomValidity("Form submission error! Please type a valid email address in lowercase!");
+    email.setCustomValidity('Form submission error! Please type a valid email address in lowercase!');
   } else {
-    email.setCustomValidity("");
+    email.setCustomValidity('');
   }
 });
-
