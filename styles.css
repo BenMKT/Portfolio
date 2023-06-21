@@ -1153,7 +1153,7 @@ form {
   .popup2 .image1 img,
   .popup3 .image1 img {
     min-width: 100%;
-    min-height: 46.875rem;
+    min-height: 37.5rem;
     margin-left: 0;
     margin-top: 2.25rem;
     margin-bottom: -2.5rem;
@@ -1169,6 +1169,7 @@ form {
   .popup2,
   .popup3 {
     padding-bottom: 0;
+    overflow-x: hidden;
   }
 
   .popup0.active,
@@ -1185,7 +1186,7 @@ form {
   .popup3 .tonic {
     display: flex;
     flex-direction: column;
-    margin-bottom: -11.25rem;
+    margin-bottom: -1.25rem;
     width: 100%;
     height: auto;
   }
@@ -1215,7 +1216,7 @@ form {
   .popup2 .image1,
   .popup3 .image1 {
     width: 100%;
-    height: 5;
+    height: 37.5rem;
     margin-left: 0;
   }
 
@@ -1225,7 +1226,6 @@ form {
   .popup3 .body1 {
     padding-left: 0;
     width: 48.625rem;
-    height: 16.9375rem;
     margin-bottom: 0;
   }
 
@@ -1238,7 +1238,7 @@ form {
     align-items: flex-start;
     position: relative;
     width: 18.75rem;
-    top: -13.75rem;
-    left: 64%;
+    top: -5.3125rem;
+    left: 65%;
   }
 }
