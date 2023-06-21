@@ -17,7 +17,7 @@ body {
   border-bottom-left-radius: 5rem;
   background-repeat: no-repeat;
   background-position: 0 3.125rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h2 {
@@ -140,7 +140,6 @@ h2 {
   padding: 1.25em 0;
   font-size: 0.9375em;
   border-radius: 1em;
-  margin: 1;
 }
 
 .body1 {
@@ -430,6 +429,51 @@ form {
   padding: 0 1.25rem;
 }
 
+.popup0,
+.popup1,
+.popup2,
+.popup3 {
+  transition: 250ms ease-in-out;
+  width: 88%;
+  height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 0.785rem;
+  z-index: 10;
+  background-color: #fff;
+  overflow-y: scroll;
+  display: block;
+}
+
+.popup0.active,
+.popup1.active,
+.popup2.active,
+.popup3.active {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 1rem;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  background-color: #c1c7d0;
+  backdrop-filter: blur(3px);
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (max-width: 767px) {
   .desktop {
     display: none;
@@ -473,6 +517,60 @@ form {
     font-style: normal;
     color: #fff;
     text-decoration: none;
+  }
+
+  .deskpopup {
+    display: none;
+  }
+
+  .popupContainer nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+  }
+
+  .popupContainer .seelive {
+    margin-top: 2.5rem;
+    margin-bottom: -12.5rem;
+  }
+
+  .popupContainer .body1 {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .popupContainer .image1 img {
+    margin-top: 1.25rem;
+    margin-bottom: -1.25rem;
+    min-width: 95%;
+  }
+
+  .popupContainer .image1 {
+    width: 100%;
+  }
+
+  .popupContainer .linkss {
+    display: flex;
+  }
+
+  #close-btn img {
+    position: relative;
+  }
+
+  .closepopup {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding-right: 0.625rem;
+  }
+
+  .seelive button {
+    font-size: 0.9375rem;
+    margin-right: 0.5rem;
+  }
+
+  .imglive {
+    margin-left: 0.5rem;
   }
 }
 
@@ -769,7 +867,7 @@ form {
   }
 
   .single {
-    margin-bottom: -5.3125rem;
+    margin-bottom: 3rem;
   }
 
   .tonic {
@@ -1049,5 +1147,99 @@ form {
     background-color: #2230d2;
     box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
     border-radius: 0.5em;
+  }
+
+  .popup0 .image1 img,
+  .popup1 .image1 img,
+  .popup2 .image1 img,
+  .popup3 .image1 img {
+    min-width: 100%;
+    min-height: 37.5rem;
+    margin-left: 0;
+    margin-top: 2.25rem;
+    margin-bottom: -2.5rem;
+  }
+
+  .popupContainer .image1 img:hover {
+    transition: none;
+    transform: none;
+  }
+
+  .popup0,
+  .popup1,
+  .popup2,
+  .popup3 {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
+
+  .popup0.active,
+  .popup1.active,
+  .popup2.active,
+  .popup3.active {
+    transform: translate(-50%, -50%) scale(1);
+    padding: 0 1.5rem;
+  }
+
+  .popup0 .tonic,
+  .popup1 .tonic,
+  .popup2 .tonic,
+  .popup3 .tonic {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1.25rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .popup0 nav,
+  .popup1 nav,
+  .popup2 nav,
+  .popup3 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .popup0 .closepopup,
+  .popup1 .closepopup,
+  .popup2 .closepopup,
+  .popup3 .closepopup {
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .popup0 .image1,
+  .popup1 .image1,
+  .popup2 .image1,
+  .popup3 .image1 {
+    width: 100%;
+    height: 37.5rem;
+    margin-left: 0;
+  }
+
+  .popup0 .body1,
+  .popup1 .body1,
+  .popup2 .body1,
+  .popup3 .body1 {
+    padding-left: 0;
+    width: 48.625rem;
+    margin-bottom: 0;
+  }
+
+  .popup0 .poplistbtn,
+  .popup1 .poplistbtn,
+  .popup2 .poplistbtn,
+  .popup3 .poplistbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 18.75rem;
+    top: -5.3125rem;
+    left: 65%;
   }
 }
