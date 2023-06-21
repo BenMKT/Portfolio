@@ -258,47 +258,14 @@ cancelbtn.forEach((button) => {
   });
 });
 
-
-const form = document.querySelector("form");
 const email = document.getElementById("email");
-const emailError = document.querySelector("#email + span.error");
 
 email.addEventListener("input", (event) => {
- 
 
-  if (email.validity.valid) {
-
-    emailError.innerHTML = ""; 
-    emailError.className = "error"; 
+  if (email.validity.patternMismatch) {
+    email.setCustomValidity("Form submission error! Please type a valid email address in lowercase!");
   } else {
-    
-    showError();
+    email.setCustomValidity("");
   }
 });
 
-form.addEventListener("submit", (event) => {
- 
-  if (!email.validity.valid) {
-    
-    showError();
-   
-    event.preventDefault();
-  }
-});
-
-function showError() {
-  if (email.validity.valueMissing) {
-
-    emailError.innerHTML = "You need to enter a valid email address.";
-  } else if (email.validity.typeMismatch) {
-
-    emailError.innerHTML = "Entered value needs to be an email address.";
-  } else if (email.validity.patternMismatch) {
- 
-    emailError.innerHTML = 'Email should be in lowercase.';
-  }
-
-  
-  emailError.className = "error active";
-  console.log(emailError.classList);
-}
