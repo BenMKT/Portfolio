@@ -258,29 +258,28 @@ cancelbtn.forEach((button) => {
   });
 });
 
-  const nameField = document.getElementById('fname');
-  const emailField = document.getElementById('email');
-  const messageField = document.getElementById('messages');
+const nameField = document.getElementById('fname');
+const emailField = document.getElementById('email');
+const messageField = document.getElementById('messages');
 
-  const formFields = JSON.parse(localStorage.getItem('formFields')) || {
-    name: '',
-    email: '',
-    message: '',
-  };
+const formFields = JSON.parse(localStorage.getItem('formFields')) || {
+  name: '',
+  email: '',
+  message: '',
+};
 
-  function updateForm() {
-    formFields.name = nameField.value;
-    formFields.email = emailField.value;
-    formFields.message = messageField.value;
+function updateForm() {
+  formFields.name = nameField.value;
+  formFields.email = emailField.value;
+  formFields.message = messageField.value;
 
-    localStorage.setItem('formFields', JSON.stringify(formFields));
-  }
+  localStorage.setItem('formFields', JSON.stringify(formFields));
+}
 
-  nameField.onchange = updateForm;
-  emailField.onchange = updateForm;
-  messageField.onchange = updateForm;
+nameField.onchange = updateForm;
+emailField.onchange = updateForm;
+messageField.onchange = updateForm;
 
-  nameField.value = formFields.name;
-  emailField.value = formFields.email;
-  messageField.value = formFields.message;
-
+nameField.value = formFields.name;
+emailField.value = formFields.email;
+messageField.value = formFields.message;
