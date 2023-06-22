@@ -257,3 +257,41 @@ cancelbtn.forEach((button) => {
     close3(popup3);
   });
 });
+
+const fname = document.getElementById('fname');
+const email = document.getElementById('email');
+const messages = document.getElementById('messages');
+
+const form = {
+  name: fname.value,
+  email: email.value,
+  message: messages.value,
+};
+console.log(form)
+if (!JSON.parse(localStorage.getItem("form"))) {
+  populateStorage();
+} else {
+  updateForm();
+}
+
+function populateStorage() {
+  localStorage.setItem("form", JSON.stringify(form));
+  updateForm();
+}
+
+function updateForm () {
+  const currentData = JSON.parse(localStorage.getItem("form"));
+  fname.value = currentData.name;
+  email.value = currentData.email;
+  messages.value = currentData.message;
+
+  
+}
+
+fname.onchange = updateForm;
+email.onchange = updateForm;
+messages.onchange = updateForm;
+
+// fname.value = form.name;
+// email.value = form.email;
+// messages.value = form.message; 
