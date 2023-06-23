@@ -276,9 +276,9 @@ function updateForm() {
   localStorage.setItem('formFields', JSON.stringify(formFields));
 }
 
-nameField.onchange = updateForm;
-emailField.onchange = updateForm;
-messageField.onchange = updateForm;
+nameField.onchange = updateForm();
+emailField.onchange = updateForm();
+messageField.onchange = updateForm();
 
 nameField.value = formFields.name;
 emailField.value = formFields.email;
