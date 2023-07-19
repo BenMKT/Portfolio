@@ -114,11 +114,9 @@ h2 {
   margin-right: 1.1875rem;
 }
 
-#headerlogo {
-  color: #142cff;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.25rem;
+#headerlogo img {
+  height: 6.25rem;
+  width: 6.25rem;
 }
 
 #headerlogo a {
@@ -642,7 +640,6 @@ form {
   #headertoolbar {
     margin-top: -1.5rem;
     display: flex;
-    align-items: baseline;
   }
 
   #headerlogo a {
