@@ -113,6 +113,12 @@ h2 {
   margin-right: 1.1875rem;
 }
 
+.icons img {
+  width: 1.25em;
+  height: 1.19em;
+  margin-right: 1.25em;
+}
+
 #headerlogo img {
   height: 6.25rem;
   width: 6.25rem;
@@ -322,12 +328,6 @@ main {
 ul {
   margin: 0;
   padding: 0;
-}
-
-.icons img {
-  width: 1.25em;
-  height: 1.19em;
-  margin-right: 1.25em;
 }
 
 .contact {
