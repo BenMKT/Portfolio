@@ -1,54 +1,48 @@
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector(".nav-menu");
 
-const menuBtn = document.getElementById('headermenubtn');
+const menuBtn = document.getElementById("headermenubtn");
 
-const closeBtn = document.getElementById('close-btn');
+const closeBtn = document.getElementById("close-btn");
 
-const navLink = document.querySelectorAll('.nav-link');
+const navLink = document.querySelectorAll(".nav-link");
 
-menuBtn.addEventListener('click', () => {
-  navMenu.style.display = 'block';
+menuBtn.addEventListener("click", () => {
+  navMenu.style.display = "block";
 });
 
-closeBtn.addEventListener('click', () => {
-  navMenu.style.display = 'none';
+closeBtn.addEventListener("click", () => {
+  navMenu.style.display = "none";
 });
 
 navLink.forEach((navLink) => {
-  navLink.addEventListener('click', () => {
-    navMenu.style.display = 'none';
+  navLink.addEventListener("click", () => {
+    navMenu.style.display = "none";
   });
 });
 
 const worksection = [
   {
-    class: 'grid-item1 tonic',
-    snapshoot: 'images/Snapshoot Portfolio (1).png',
-    desktop: 'images/Snapshoot Portfolio (1).png',
-    Tonic: 'Tonic',
-    offer: ['CANOPY', 'Back End Dev', '2015'],
+    class: "grid-item1 tonic",
+    snapshoot: "images/Space Travellers Hub.png",
+    Tonic: "Space Travelers Hub",
+    offer: ["SPACEHUB", "Front End Dev", "2023"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-    of type and scrambled it 1960s. Lorem Ipsum is 
-    simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever 
-    since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
-    type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    liveversion: 'images/Icon.png',
-    source: 'images/Vector.png',
-    skills: ['HTML', 'css', 'javaScript'],
+      "Space Travelers' Hub! is a single page web application for a company that provides commercial and scientific space travel services. This application allows user's to book rockets and join selected space missions for both leisure and business needs.",
+    descriptionpop1: `🚀☄Space Travelers' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels... To infinity and beyond!! 🌌`,
+    liveversion: "images/Icon.png",
+    liveLink: "https://guileless-halva-645039.netlify.app/",
+    source: "images/Vector.png",
+    sourceLink: "https://github.com/BenMKT/Space-Travelers-Hub",
+    skills: ["HTML5", "CSS3", "JavaScript", "React", "Redux"],
   },
   {
-    class: 'grid-item1 stories single',
-    snapshoot: 'images/Snapshoot Portfolio (2).png',
-    desktop: 'images/Snapshoot Portfolio (2).png',
-    Tonic: 'Multi-Post Stories',
-    offer: ['CANOPY', 'Back End Dev', '2015'],
+    class: "grid-item1 stories single",
+    snapshoot: "images/Snapshoot Portfolio (2).png",
+    desktop: "images/Snapshoot Portfolio (2).png",
+    Tonic: "Multi-Post Stories",
+    offer: ["CANOPY", "Back End Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required",
     descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
@@ -57,18 +51,18 @@ const worksection = [
     Lorem Ipsum has been the industry's standard dummy text ever 
     since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
     type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    liveversion: 'images/Icon.png',
-    source: 'images/Vector.png',
-    skills: ['HTML', 'css', 'javaScript'],
+    liveversion: "images/Icon.png",
+    source: "images/Vector.png",
+    skills: ["HTML", "css", "javaScript"],
   },
   {
-    class: 'grid-item1 grid-item3 tonic',
-    snapshoot: 'images/Snapshoot Portfolio (3).png',
-    desktop: 'images/Snapshoot Portfolio (3).png',
-    Tonic: 'Tonic',
-    offer: ['CANOPY', 'Back End Dev', '2015'],
+    class: "grid-item1 grid-item3 tonic",
+    snapshoot: "images/Snapshoot Portfolio (3).png",
+    desktop: "images/Snapshoot Portfolio (3).png",
+    Tonic: "Tonic",
+    offer: ["CANOPY", "Back End Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required",
     descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
@@ -77,18 +71,18 @@ const worksection = [
     Lorem Ipsum has been the industry's standard dummy text ever 
     since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
     type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    liveversion: 'images/Icon.png',
-    source: 'images/Vector.png',
-    skills: ['HTML', 'css', 'javaScript'],
+    liveversion: "images/Icon.png",
+    source: "images/Vector.png",
+    skills: ["HTML", "css", "javaScript"],
   },
   {
-    class: 'grid-item1 stories',
-    snapshoot: 'images/Snapshoot Portfolio (4).png',
-    desktop: 'images/Snapshoot Portfolio (4).png',
-    Tonic: 'Multi-Post Stories',
-    offer: ['CANOPY', 'Back End Dev', '2015'],
+    class: "grid-item1 stories",
+    snapshoot: "images/Snapshoot Portfolio (4).png",
+    desktop: "images/Snapshoot Portfolio (4).png",
+    Tonic: "Multi-Post Stories",
+    offer: ["CANOPY", "Back End Dev", "2015"],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      "A daily selection of privately personalized reads; no accounts or sign-ups required",
     descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
@@ -97,13 +91,13 @@ const worksection = [
     Lorem Ipsum has been the industry's standard dummy text ever 
     since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
     type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    liveversion: 'images/Icon.png',
-    source: 'images/Vector.png',
-    skills: ['HTML', 'css', 'javaScript'],
+    liveversion: "images/Icon.png",
+    source: "images/Vector.png",
+    skills: ["HTML", "css", "javaScript"],
   },
 ];
 
-const workscard = document.getElementById('works');
+const workscard = document.getElementById("works");
 
 worksection.forEach((project) => {
   workscard.innerHTML += `
@@ -124,21 +118,23 @@ worksection.forEach((project) => {
           <ul class='linkss'>
             <li>${project.skills[0]}</li>
             <li>${project.skills[1]}</li>
-            <li></>${project.skills[2]}</li>
+            <li>${project.skills[2]}</li>
+            <li>${project.skills[3]}</li>
+            <li>${project.skills[4]}</li>
           </ul>
           <button id='prjbtn' name='prjbtn' data-modal-target='#prjbtn'>See Project</button>
         </div>
       </div>`;
 });
 
-const popupContainer = document.querySelector('.popupContainer');
+const popupContainer = document.querySelector(".popupContainer");
 
 function createPop() {
   for (let i = 0; i < 4; i += 1) {
-    const pop = document.createElement('pop');
+    const pop = document.createElement("pop");
     pop.classList.add(`popup${i}`);
     pop.innerHTML = `
- <div class='grid-item1 tonic' id='grid-item1 tonic'>
+    <div class='grid-item1 tonic' id='grid-item1 tonic'>
     <nav>
       <h2>${worksection[i].Tonic}</h2>
       <button type='button' class='closepopup'><img src='images/Close-Icon1.png' alt='close button'></button>
@@ -164,11 +160,13 @@ function createPop() {
           <li>${worksection[i].skills[0]}</li>
           <li>${worksection[i].skills[1]}</li>
           <li>${worksection[i].skills[2]}</li>
+          <li>${worksection[i].skills[3]}</li>
+          <li>${worksection[i].skills[4]}</li>
         </ul>
       </div>
         <div class='seelive'>
-          <button>See live <img class='imglive' src='${worksection[i].liveversion}' alt='live'></button>
-          <button>See Source <img class='imglive' src='${worksection[i].source}' alt='source'></button>
+          <button id='liveLink'>See live <img class='imglive' src='${worksection[i].liveversion}' alt='live'></button>
+          <button id='sourceLink'>See Source <img class='imglive' src='${worksection[i].source}' alt='source'></button>
         </div>
         </div>
       </div>
@@ -178,82 +176,92 @@ function createPop() {
 }
 createPop();
 
-const seabtn = document.querySelectorAll('#prjbtn');
-const cancelbtn = document.querySelectorAll('.closepopup');
-const overlay = document.getElementById('overlay');
+const seabtn = document.querySelectorAll("#prjbtn");
+const sourcebtn = document.querySelectorAll("#sourceLink");
+const livebtn = document.querySelectorAll("#liveLink");
+const cancelbtn = document.querySelectorAll(".closepopup");
+const overlay = document.getElementById("overlay");
 
-seabtn[0].addEventListener('click', () => {
-  const popup0 = document.querySelector('.popup0');
-  popup0.classList.add('active');
-  overlay.classList.add('active');
+seabtn[0].addEventListener("click", () => {
+  const popup0 = document.querySelector(".popup0");
+  popup0.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close(popup0) {
   if (popup0 == null) return;
-  popup0.classList.remove('active');
-  overlay.classList.remove('active');
+  popup0.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup0 = button.closest('.popup0');
+  button.addEventListener("click", () => {
+    const popup0 = button.closest(".popup0");
     close(popup0);
   });
 });
 
-seabtn[1].addEventListener('click', () => {
-  const popup1 = document.querySelector('.popup1');
-  popup1.classList.add('active');
-  overlay.classList.add('active');
+sourcebtn[0].addEventListener("click", () => {
+  window.open(`${worksection[0].sourceLink}`, "_blank");
+});
+
+livebtn[0].addEventListener("click", () => {
+  window.open(`${worksection[0].liveLink}`, "_blank");
+});
+
+seabtn[1].addEventListener("click", () => {
+  const popup1 = document.querySelector(".popup1");
+  popup1.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close1(popup1) {
   if (popup1 == null) return;
-  popup1.classList.remove('active');
-  overlay.classList.remove('active');
+  popup1.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup1 = button.closest('.popup1');
+  button.addEventListener("click", () => {
+    const popup1 = button.closest(".popup1");
     close1(popup1);
   });
 });
 
-seabtn[2].addEventListener('click', () => {
-  const popup2 = document.querySelector('.popup2');
-  popup2.classList.add('active');
-  overlay.classList.add('active');
+seabtn[2].addEventListener("click", () => {
+  const popup2 = document.querySelector(".popup2");
+  popup2.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close2(popup2) {
   if (popup2 == null) return;
-  popup2.classList.remove('active');
-  overlay.classList.remove('active');
+  popup2.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup2 = button.closest('.popup2');
+  button.addEventListener("click", () => {
+    const popup2 = button.closest(".popup2");
     close2(popup2);
   });
 });
 
-seabtn[3].addEventListener('click', () => {
-  const popup3 = document.querySelector('.popup3');
-  popup3.classList.add('active');
-  overlay.classList.add('active');
+seabtn[3].addEventListener("click", () => {
+  const popup3 = document.querySelector(".popup3");
+  popup3.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close3(popup3) {
   if (popup3 == null) return;
-  popup3.classList.remove('active');
-  overlay.classList.remove('active');
+  popup3.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup3 = button.closest('.popup3');
+  button.addEventListener("click", () => {
+    const popup3 = button.closest(".popup3");
     close3(popup3);
   });
 });
