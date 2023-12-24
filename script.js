@@ -33,7 +33,7 @@ const worksection = [
     liveLink: "https://guileless-halva-645039.netlify.app/",
     source: "images/Vector.png",
     sourceLink: "https://github.com/BenMKT/Space-Travelers-Hub",
-    skills: ["HTML5", "CSS3", "JavaScript", "React", "Redux"],
+    skills: ["HTML5", "CSS3", "Redux", "React", "JavaScript"],
   },
   {
     class: "grid-item1 stories single",
