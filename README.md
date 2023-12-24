@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://benmkt.github.io/myPortfolio/)
+- [Live Demo Link](https://benmkt.github.io/Portfolio/)
 - View [video](https://www.loom.com/share/d9ac06bbacce4bc2b42e0985d5095453) walkthrough
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,7 +145,7 @@ Example:
 
 👤 **Benson Kiai:**
 
-- GitHub: [@BenMKT](https://github.com/BenMKT/myPortfolio)
+- GitHub: [@BenMKT](https://github.com/BenMKT)
 - Linkedin: [@BenK](https://www.linkedin.com/in/bensonkiai)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -166,7 +166,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BenMKT/myPortfolio/issues).
+Feel free to check the [issues page](https://github.com/BenMKT/Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
