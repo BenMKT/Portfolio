@@ -37,7 +37,7 @@ const worksection = [
   },
   {
     class: "grid-item1 stories single",
-    snapshoot: "images/Recipe App.png",
+    snapshoot: "images/Recipe App1.png",
     Tonic: "Recipe App",
     offer: ["MYCAFE", "Full Stack Dev", "2023"],
     description:
@@ -51,23 +51,17 @@ const worksection = [
   },
   {
     class: "grid-item1 grid-item3 tonic",
-    snapshoot: "images/Snapshoot Portfolio (3).png",
-    desktop: "images/Snapshoot Portfolio (3).png",
-    Tonic: "Tonic",
-    offer: ["CANOPY", "Back End Dev", "2015"],
+    snapshoot: "images/BudgetApp Screenshot1.png",
+    Tonic: "Smart Budget App",
+    offer: ["FINANCE", "Full Stack Dev", "2023"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required",
-    descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-    of type and scrambled it 1960s. Lorem Ipsum is 
-    simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever 
-    since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
-    type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+      "💰💼 Track and manage your budget effortlessly with this web application.",
+    descriptionpop1: `💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions.`,
     liveversion: "images/Icon.png",
+    liveLink: "https://smartbudgetapp-v1wv.onrender.com/",
     source: "images/Vector.png",
-    skills: ["HTML", "css", "javaScript"],
+    sourceLink: "https://github.com/BenMKT/Budget-App",
+    skills: ["HTML5", "CSS3", "Rspec", "PostgreSQL", "Ruby on Rails"],
   },
   {
     class: "grid-item1 stories",
@@ -247,6 +241,14 @@ cancelbtn.forEach((button) => {
     const popup2 = button.closest(".popup2");
     close2(popup2);
   });
+});
+
+sourcebtn[2].addEventListener("click", () => {
+  window.open(`${worksection[2].sourceLink}`, "_blank");
+});
+
+livebtn[2].addEventListener("click", () => {
+  window.open(`${worksection[2].liveLink}`, "_blank");
 });
 
 seabtn[3].addEventListener("click", () => {
