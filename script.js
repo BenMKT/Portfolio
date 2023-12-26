@@ -71,7 +71,7 @@ const worksection = [
     Tonic: "TripTrek App",
     offer: ["TRAVEL", "Back End Dev", "2023"],
     description:
-      "🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip. Our user-friendly platform ensures a seamless and convenient booking process.",
+      "🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip, our user-friendly platform ensures a seamless and convenient booking process.",
     descriptionpop1: `🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip.<br><br>
     Our user-friendly platform ensures a seamless and convenient booking process, allowing you to choose from a diverse fleet of reliable vehicles. Experience the freedom of the open road as TripTrek takes care of the details, making your travel adventures memorable and stress-free.<br><br>
     Embrace the joy of exploration with TripTrek – your trusted companion for every road ahead.`,
