@@ -27,7 +27,7 @@ const worksection = [
     Tonic: "Space Travelers Hub",
     offer: ["SPACEHUB", "Front End Dev", "2023"],
     description:
-      "Space Travelers' Hub! is a single page web application for a company that provides commercial and scientific space travel services. This application allows user's to book rockets and join selected space missions for both leisure and business needs.",
+      "🚀 Space Travelers' Hub! is a single page web application for a company that provides commercial and scientific space travel services. This application allows user's to book rockets and join selected space missions for both leisure and business needs.",
     descriptionpop1: `🚀☄Space Travelers' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels. <br><br> To infinity and beyond!! 🌌`,
     liveversion: "images/Icon.png",
     liveLink: "https://guileless-halva-645039.netlify.app/",
@@ -42,7 +42,8 @@ const worksection = [
     offer: ["MYCAFE", "Full Stack Dev", "2023"],
     description:
       "Cooking has never been this convenient! <br><br> Simplify your kitchen adventures with our Recipe app which keeps track of all your recipes, ingredients, and inventory.",
-    descriptionpop1: `Introducing the Recipe App: Your all-in-one solution for effortless cooking! <br><br> Seamlessly organize your recipes, ingredients, and pantry items. Craft delicious recipes with ease, generate smart shopping lists, and even share your culinary creations with the world. <br><br> Cooking has never been this convenient – simplify your kitchen adventures with our Recipe app!`,
+    descriptionpop1: `Introducing the Recipe App: Your all-in-one solution for effortless cooking! <br><br>
+    Seamlessly organize your recipes, ingredients, and pantry items. Craft delicious recipes with ease, generate smart shopping lists, and even share your culinary creations with the world. <br><br> Cooking has never been this convenient – simplify your kitchen adventures with our Recipe app!`,
     liveversion: "images/Icon.png",
     liveLink: "https://ror-recipeapp.onrender.com/",
     source: "images/Vector.png",
@@ -56,7 +57,8 @@ const worksection = [
     offer: ["FINANCE", "Full Stack Dev", "2023"],
     description:
       "💰💼 Track and manage your budget effortlessly with this web application.",
-    descriptionpop1: `💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions.`,
+    descriptionpop1: `<br><br><br>
+    💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions.`,
     liveversion: "images/Icon.png",
     liveLink: "https://smartbudgetapp-v1wv.onrender.com/",
     source: "images/Vector.png",
@@ -65,23 +67,19 @@ const worksection = [
   },
   {
     class: "grid-item1 stories",
-    snapshoot: "images/Snapshoot Portfolio (4).png",
-    desktop: "images/Snapshoot Portfolio (4).png",
-    Tonic: "Multi-Post Stories",
-    offer: ["CANOPY", "Back End Dev", "2015"],
+    snapshoot: "images/TripTrek Screenshot.png",
+    Tonic: "TripTrek App",
+    offer: ["TRAVEL", "Back End Dev", "2023"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required",
-    descriptionpop1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    descriptionpop: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-    of type and scrambled it 1960s. Lorem Ipsum is 
-    simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever 
-    since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of 
-    type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+      "🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip. Our user-friendly platform ensures a seamless and convenient booking process.",
+    descriptionpop1: `🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip.<br><br>
+    Our user-friendly platform ensures a seamless and convenient booking process, allowing you to choose from a diverse fleet of reliable vehicles. Experience the freedom of the open road as TripTrek takes care of the details, making your travel adventures memorable and stress-free.<br><br>
+    Embrace the joy of exploration with TripTrek – your trusted companion for every road ahead.`,
     liveversion: "images/Icon.png",
+    liveLink: "https://triptrek-7690.onrender.com/",
     source: "images/Vector.png",
-    skills: ["HTML", "css", "javaScript"],
+    sourceLink: "https://github.com/BenMKT/TripTrek-API",
+    skills: ["HTML", "css", "React", "PostgreSQL", "Ruby on Rails"],
   },
 ];
 
@@ -268,4 +266,12 @@ cancelbtn.forEach((button) => {
     const popup3 = button.closest(".popup3");
     close3(popup3);
   });
+});
+
+sourcebtn[3].addEventListener("click", () => {
+  window.open(`${worksection[3].sourceLink}`, "_blank");
+});
+
+livebtn[3].addEventListener("click", () => {
+  window.open(`${worksection[3].liveLink}`, "_blank");
 });
