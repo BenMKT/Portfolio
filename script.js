@@ -79,7 +79,7 @@ const worksection = [
     liveLink: "https://triptrek-7690.onrender.com/",
     source: "images/Vector.png",
     sourceLink: "https://github.com/BenMKT/TripTrek-API",
-    skills: ["HTML", "css", "React", "PostgreSQL", "Ruby on Rails"],
+    skills: ["HTML5", "CSS3", "React", "PostgreSQL", "Ruby on Rails"],
   },
 ];
 
