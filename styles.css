@@ -256,12 +256,12 @@ i:hover {
   line-height: 1.25rem;
 }
 
-.about {
+/* .about {
   background-color: #fff;
   margin-top: 5rem;
   border-top-right-radius: 5em;
   padding-bottom: 9.375rem;
-}
+} */
 
 .works {
   background-color: #e5e5e5;
@@ -471,7 +471,7 @@ form {
   pointer-events: all;
 }
 
-@media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px)  */
   .desktop {
     display: none;
   }
@@ -569,11 +569,10 @@ form {
   .imglive {
     margin-left: 0.5rem;
   }
-}
 
 @media screen and (min-width: 768px) {
   body {
-    min-width: fit-content;
+    width: fit-content;
   }
 
   #headermenubtn {
@@ -626,6 +625,7 @@ form {
     background-position: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: -3em;
   }
 
   #headerarticle {
@@ -757,23 +757,26 @@ form {
     background: none;
   }
 
-  .about .main {
+  #about {
     display: flex;
     height: 57.75rem;
     background-color: #fff;
-    padding: 5em 1.5em 0;
-    border-top-right-radius: 6.25rem;
-    flex-direction: row;
-    margin-bottom: -12.5rem;
+    margin-top: 7rem;
+    border-top-right-radius: 10em;
+    gap: 5em;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8.9375rem;
+    align-items: flex-start;
   }
 
   .content {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex: 0;
-    margin-left: 8.9375rem;
-    margin-right: 3.125rem;
   }
 
   .main .caps {
@@ -782,11 +785,8 @@ form {
     line-height: 1.5em;
     font-weight: 500;
     font-style: normal;
-    margin-top: 0;
-  }
-
-  .content .icons {
-    margin-top: -4.375rem;
+    margin-top: 10%;
+    margin-bottom: -3.5em;
   }
 
   .icons li {
@@ -1023,12 +1023,6 @@ form {
     margin: 0;
   }
 
-  .about {
-    margin-top: 0;
-    padding-top: 6.25rem;
-    background-color: #e5e5e5;
-  }
-
   .works {
     background-color: #e5e5e5;
     width: 100%;
@@ -1237,5 +1231,86 @@ form {
     width: 18.75rem;
     top: -5.3125rem;
     left: 65%;
+  }
+
+  .sql img {
+    width: 2.3em;
+    height: auto;
+  }
+
+  .prop img {
+    max-width: 3em;
+    height: 2.5em;
+  }
+
+  .prim-text {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 3.25em;
+    color: #172b4d;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    height: 14.9375em;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+.frames {
+    width: 4.7em;
+    height: auto;
+  }
+
+.framesskill{
+  width: 3.5em;
+}
+
+.framesjest{
+  width: 3.4em;
+  }
+
+.framessoft{
+  width: 3em;
+  border-radius: 50%; 
+  }
+
+#problemsolve{
+  border-radius: 50%; 
+  width: 5.5em;
+  height: 3em;
+  }
+
+#psql{
+  width: 2.5em;
+  height: auto;
+  }
+
+.framesboots {
+    width: 6em;
+  }
+
+.framesrails{
+  width: 3em;
+  }
+
+.skill-set{
+    padding-left: 0;
+    gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-set li{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    list-style-type: none;
+  }
+
+  .framesruby{
+    max-width: 80%;
   }
 }
