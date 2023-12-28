@@ -471,104 +471,103 @@ form {
   pointer-events: all;
 }
 
-  /* @media screen and (max-width: 767px)  */
-  .desktop {
-    display: none;
-  }
+.desktop {
+  display: none;
+}
 
-  .nav-menu {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #6070fff7;
-    width: 100%;
-    height: 100%;
-  }
+.nav-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #6070fff7;
+  width: 100%;
+  height: 100%;
+}
 
-  #close-btn {
-    border: none;
-    display: flex;
-    background-color: transparent;
-    width: 95%;
-    height: 5%;
-    margin-top: 2.75rem;
-    padding: 0;
-    justify-content: flex-end;
-  }
+#close-btn {
+  border: none;
+  display: flex;
+  background-color: transparent;
+  width: 95%;
+  height: 5%;
+  margin-top: 2.75rem;
+  padding: 0;
+  justify-content: flex-end;
+}
 
-  .nav-menu ul {
-    list-style-type: none;
-    padding-left: 1.75rem;
-    display: flex;
-    flex-direction: column;
-  }
+.nav-menu ul {
+  list-style-type: none;
+  padding-left: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  .nav-menu li {
-    margin-bottom: 2.5rem;
-  }
+.nav-menu li {
+  margin-bottom: 2.5rem;
+}
 
-  .nav-link {
-    font-size: 2rem;
-    font-weight: 600;
-    font-style: normal;
-    color: #fff;
-    text-decoration: none;
-  }
+.nav-link {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+}
 
-  .deskpopup {
-    display: none;
-  }
+.deskpopup {
+  display: none;
+}
 
-  .popupContainer nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -40px;
-  }
+.popupContainer nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -40px;
+}
 
-  .popupContainer .seelive {
-    margin-top: 2.5rem;
-    margin-bottom: -12.5rem;
-  }
+.popupContainer .seelive {
+  margin-top: 2.5rem;
+  margin-bottom: -12.5rem;
+}
 
-  .popupContainer .body1 {
-    padding-bottom: 0;
-    padding-left: 0;
-  }
+.popupContainer .body1 {
+  padding-bottom: 0;
+  padding-left: 0;
+}
 
-  .popupContainer .image1 img {
-    margin-top: 1.25rem;
-    margin-bottom: -1.25rem;
-    min-width: 95%;
-  }
+.popupContainer .image1 img {
+  margin-top: 1.25rem;
+  margin-bottom: -1.25rem;
+  min-width: 95%;
+}
 
-  .popupContainer .image1 {
-    width: 100%;
-  }
+.popupContainer .image1 {
+  width: 100%;
+}
 
-  .popupContainer .linkss {
-    display: flex;
-  }
+.popupContainer .linkss {
+  display: flex;
+}
 
-  #close-btn img {
-    position: relative;
-  }
+#close-btn img {
+  position: relative;
+}
 
-  .closepopup {
-    border: none;
-    outline: none;
-    margin: 0;
-    padding-right: 0.625rem;
-  }
+.closepopup {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding-right: 0.625rem;
+}
 
-  .seelive button {
-    font-size: 0.9375rem;
-    margin-right: 0.5rem;
-  }
+.seelive button {
+  font-size: 0.9375rem;
+  margin-right: 0.5rem;
+}
 
-  .imglive {
-    margin-left: 0.5rem;
-  }
+.imglive {
+  margin-left: 0.5rem;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -968,16 +967,17 @@ form {
   }
 
   @keyframes color-change {
-  /* Define the keyframes for the animation */
-  0%, 100% {
-    color: #396df2;
-    background-color: #fff
+    /* Define the keyframes for the animation */
+    0%,
+    100% {
+      color: #396df2;
+      background-color: #fff;
+    }
+    50% {
+      color: #fff;
+      background-color: #6070ff;
+    }
   }
-  50% {
-    color: #fff;
-    background-color: #6070ff;
-  }
-}
 
   button:active {
     color: #fff;
@@ -1291,58 +1291,58 @@ form {
     align-items: flex-start;
   }
 
-.frames {
+  .frames {
     width: 4.7em;
     height: auto;
   }
 
-.framesskill{
-  width: 3.5em;
-}
-
-.framesjest{
-  width: 3.4em;
+  .framesskill {
+    width: 3.5em;
   }
 
-.framessoft{
-  width: 3em;
-  border-radius: 50%; 
+  .framesjest {
+    width: 3.4em;
   }
 
-#problemsolve{
-  border-radius: 50%; 
-  width: 5.5em;
-  height: 3em;
+  .framessoft {
+    width: 3em;
+    border-radius: 50%;
   }
 
-#psql{
-  width: 2.5em;
-  height: auto;
+  #problemsolve {
+    border-radius: 50%;
+    width: 5.5em;
+    height: 3em;
   }
 
-.framesboots {
+  #psql {
+    width: 2.5em;
+    height: auto;
+  }
+
+  .framesboots {
     width: 6em;
   }
 
-.framesrails{
-  width: 3em;
+  .framesrails {
+    width: 3em;
   }
 
-.skill-set{
+  .skill-set {
     padding-left: 0;
     gap: 3em;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .skill-set li{
+  .skill-set li {
     border-radius: 50%;
     height: 90px;
     width: 90px;
     list-style-type: none;
   }
 
-  .framesruby{
+  .framesruby {
     max-width: 80%;
   }
 }
