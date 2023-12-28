@@ -1291,6 +1291,16 @@ form {
     align-items: flex-start;
   }
 
+  .skill-name {
+    display: block;
+    font-weight: 600;
+    font-size: 1em;
+    /* line-height: 1.5em; */
+    color: #172b4d;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
   .frames {
     width: 4.7em;
     height: auto;
