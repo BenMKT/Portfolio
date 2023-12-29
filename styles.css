@@ -256,16 +256,124 @@ i:hover {
   line-height: 1.25rem;
 }
 
-/* .about {
+#about {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   margin-top: 5rem;
-  border-top-right-radius: 5em;
-  padding-bottom: 9.375rem;
-} */
+  border-top-right-radius: 10em;
+  padding-bottom: 5em;
+}
+
+.grid-item1 .image1 img {
+  max-width: 80vw;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.grid-item1 .image1 {
+  height: 40vh;
+}
+
+#poprails {
+  width: 100px;
+}
+
+.sql img {
+  width: 2.3em;
+  height: auto;
+}
+
+.prop img {
+  max-width: 3em;
+  height: 2.5em;
+}
+
+.prim-text {
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 3.25em;
+  color: #172b4d;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
+}
+
+.skill-name {
+  display: block;
+  font-weight: 600;
+  font-size: 1em;
+  color: #172b4d;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.frames {
+  width: 4.7em;
+  height: auto;
+}
+
+.framesskill {
+  width: 3.5em;
+}
+
+.framesjest {
+  width: 3.4em;
+}
+
+.framessoft {
+  width: 3em;
+  border-radius: 50%;
+}
+
+#problemsolve {
+  border-radius: 50%;
+  width: 5.5em;
+  height: 3em;
+}
+
+#psql {
+  width: 2.5em;
+  height: auto;
+}
+
+.framesboots {
+  width: 6em;
+}
+
+.framesrails {
+  width: 3em;
+}
+
+.skill-set {
+  padding-left: 0;
+  gap: 4em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-set li {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.framesruby {
+  max-width: 80%;
+}
 
 .works {
   background-color: #e5e5e5;
-  width: 100%;
+  width: 100vw;
+  margin-top: -15%;
 }
 
 .image1 {
