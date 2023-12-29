@@ -870,6 +870,7 @@ form {
 
   #about {
     display: flex;
+    flex-direction: row;
     height: 57.75rem;
     background-color: #fff;
     margin-top: 7rem;
