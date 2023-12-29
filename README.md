@@ -60,7 +60,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **HTML & CSS Linters integration**
-- **[More Coming Soon]**
+- **Form validation**
 - **[More Coming Soon]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
