@@ -1295,7 +1295,6 @@ form {
     display: block;
     font-weight: 600;
     font-size: 1em;
-    /* line-height: 1.5em; */
     color: #172b4d;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
@@ -1350,6 +1349,10 @@ form {
     height: 90px;
     width: 90px;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .framesruby {
