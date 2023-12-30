@@ -291,7 +291,7 @@ i:hover {
 
 .prim-text {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 3.25em;
   color: #172b4d;
 }
@@ -1086,6 +1086,7 @@ form {
       color: #396df2;
       background-color: #fff;
     }
+
     50% {
       color: #fff;
       background-color: #6070ff;
@@ -1299,9 +1300,9 @@ form {
   }
 
   .popupContainer .linkss {
-  display: flex;
-  flex-wrap: nowrap;
-}
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
   .popup0,
   .popup1,
@@ -1395,7 +1396,7 @@ form {
 
   .prim-text {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 3.25em;
     color: #172b4d;
   }
@@ -1403,7 +1404,7 @@ form {
   .skill-list {
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 4em;
     height: 14.9375em;
     margin-left: 0;
     align-items: flex-start;

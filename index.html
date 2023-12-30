@@ -1,143 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Benson Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <div id="headertoolbar">
-            <div id="headerlogo"><a href="#home"><img src="images/Passport Photo (1).png" alt="my photo"></a></div>
-            <nav class="navheader">
-                <button id="headermenubtn" type="button"><img src="images/Union.png" alt="dropdown menu"></button>
-                <ul class="desktop">
-                    <li><a href="#works">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+      <div id="headertoolbar">
+        <div id="headerlogo">
+          <a href="#home"
+            ><img src="images/Passport Photo (1).png" alt="my photo"
+          /></a>
         </div>
-        <div class="nav-menu">
-          <button id="close-btn" type="button"><img src="images/Close-Icon.png" alt="close-btn"></button>
-          <ul>
-            <li><a class="nav-link" href="#works">Portfolio</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+        <nav class="navheader">
+          <button id="headermenubtn" type="button">
+            <img src="images/Union.png" alt="dropdown menu" />
+          </button>
+          <ul class="desktop">
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <section id="headerarticle">
-            <h1>Hey there! 👋 I'm Benson!</h1>
-            <p>I'm a Full-stack web developer who's all about creating awesome user experiences. My focus is on delivering top-notch, scalable solutions while making sure to hit those deadlines. Take a look at some of my projects to get a sense of my capabilities. You can find live demos of my projects here, so feel free to check them out. Let's team up and make something really cool together! 😄✨</p>
-            <p class="connect">LET’S CONNECT</p>
-            <ul class="headericons">
-                <li><a href="www.linkedin.com/in/bensonkiai"><img src="images/Linkedin icon.png" alt="linkedin"></a></li>
-                <li><a href="https://medium.com/@benson.kiai86"><img src="images/Email icon.png" alt="medium"></a></li>
-                <li><a href="https://github.com/BenMKT"><img src="images/Github icon.png" alt="github"></a></li>
-                <li><a href="https://wellfound.com/u/bensonkiai"><img src="images/Peace icon.png" alt="Angellist"></a></li>
-            </ul>
-        </section> 
+        </nav>
+      </div>
+      <div class="nav-menu">
+        <button id="close-btn" type="button">
+          <img src="images/Close-Icon.png" alt="close-btn" />
+        </button>
+        <ul>
+          <li><a class="nav-link" href="#works">Portfolio</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <section id="headerarticle">
+        <h1>Hey there! 👋 I'm Benson!</h1>
+        <p>
+          I'm a Full-stack web developer who's all about creating awesome user
+          experiences. My focus is on delivering top-notch, scalable solutions
+          while making sure to hit those deadlines. Take a look at some of my
+          projects to get a sense of my capabilities. You can find live demos of
+          my projects here, so feel free to check them out. Let's team up and
+          make something really cool together! 😄✨
+        </p>
+        <p class="connect">LET’S CONNECT</p>
+        <ul class="headericons">
+          <li>
+            <a href="www.linkedin.com/in/bensonkiai"
+              ><img src="images/Linkedin icon.png" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@benson.kiai86"
+              ><img src="images/Email icon.png" alt="medium"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/BenMKT"
+              ><img src="images/Github icon.png" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://wellfound.com/u/bensonkiai"
+              ><img src="images/Peace icon.png" alt="Angellist"
+            /></a>
+          </li>
+        </ul>
+      </section>
     </header>
     <main>
+      <section id="works" class="grid-container works">
+        <div class="popupContainer"></div>
+        <div id="overlay"></div>
+      </section>
 
-        <section id="works" class="grid-container works">
-          <div class="popupContainer" ></div>
-          <div id="overlay"></div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="main">
-              <div class="content">
-                <h2>About Myself</h2>
-                <p>I'm a skilled software developer with a passion for creating innovative solutions. I'm into Rails, JavaScript, and React, and I love building dynamic and responsive web apps. If you have a project in mind that requires coding expertise, please don't hesitate to reach out. I'm always excited to collaborate on new ventures!</p>
-               </div>            
-                <p class="caps">LET’S CONNECT</p>
-                <ul class="icons">
-                    <li><a href="www.linkedin.com/in/bensonkiai"><img src="images/Linkedin icon.png" alt="linkedin"></a></li>
-                    <li><a href="https://medium.com/@benson.kiai86"><img src="images/Email icon.png" alt="medium"></a></li>
-                    <li><a href="https://github.com/BenMKT"><img src="images/Github icon.png" alt="github"></a></li>
-                    <li><a href="https://wellfound.com/u/bensonkiai"><img src="images/Peace icon.png" alt="Angellist"></a></li>
-                </ul>
-                <button>Get my resume</button>
-            </div>
-            <div class="skill-list">
-                <h2 class="prim-text">My skills</h2>
-                <ul class="skill-set">
-              <li class="js">
-                <img src="images/JS Ellipse.png" alt="javascript language">
-                <span class="skill-name">JavaScript</span>
-               </li>
-              <li class="html">
-                  <img src="images/HTML Ellipse.png" alt="html Language">
-                  <span class="skill-name">HTML</span>
-              </li>
-                <li class="css">
-                   <img src="images/CSS Ellipse.png" alt="css language">
-                   <span class="skill-name">CSS</span>
-                </li>
-                <li>
-                  <img src="images/ruby.png" alt="ruby icon" class="framesruby"  class="mobile-view">
-                  <span class="skill-name">Ruby</span>
-                </li>
-                <li class="sql" >
-                   <img id="psql" src="images\postgres.png" alt="Postgresql language" class="mobile-view">
-                   <span class="skill-name">PostgreSQL</span>
-                </li>
-                 <li> 
-                   <img class="frames" src="images\React.svg" alt="React">
-                   <span class="skill-name">React</span>
-                </li>
-                <li> 
-                  <img class="frames" src="images/redux.png" alt="Redux">
-                  <span class="skill-name">Redux</span>
-               </li>
-                <li>
-              <img class="framesboots" src="images/bootstrap.png" alt="bootstrap">
+      <section id="about" class="about">
+        <div class="main">
+          <div class="content">
+            <h2>About Myself</h2>
+            <p>
+              I'm a skilled software developer with a passion for creating
+              innovative solutions. I'm into Rails, JavaScript, and React, and I
+              love building dynamic and responsive web apps. If you have a
+              project in mind that requires coding expertise, please don't
+              hesitate to reach out. I'm always excited to collaborate on new
+              ventures!
+            </p>
+          </div>
+          <p class="caps">LET’S CONNECT</p>
+          <ul class="icons">
+            <li>
+              <a href="www.linkedin.com/in/bensonkiai"
+                ><img src="images/Linkedin icon.png" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@benson.kiai86"
+                ><img src="images/Email icon.png" alt="medium"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/BenMKT"
+                ><img src="images/Github icon.png" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://wellfound.com/u/bensonkiai"
+                ><img src="images/Peace icon.png" alt="Angellist"
+              /></a>
+            </li>
+          </ul>
+          <button type="button">Get my resume</button>
+        </div>
+        <div class="skill-list">
+          <h2 class="prim-text">My skills</h2>
+          <ul class="skill-set">
+            <li class="js">
+              <img src="images/JS Ellipse.png" alt="javascript language" />
+              <span class="skill-name">JavaScript</span>
+            </li>
+            <li class="html">
+              <img src="images/HTML Ellipse.png" alt="html Language" />
+              <span class="skill-name">HTML</span>
+            </li>
+            <li class="css">
+              <img src="images/CSS Ellipse.png" alt="css language" />
+              <span class="skill-name">CSS</span>
+            </li>
+            <li>
+              <img
+                src="images/ruby.png"
+                alt="ruby icon"
+                class="framesruby"
+                class="mobile-view"
+              />
+              <span class="skill-name">Ruby</span>
+            </li>
+            <li class="sql">
+              <img
+                id="psql"
+                src="images\postgres.png"
+                alt="Postgresql language"
+                class="mobile-view"
+              />
+              <span class="skill-name">PostgreSQL</span>
+            </li>
+            <li>
+              <img class="frames" src="images\React.svg" alt="React" />
+              <span class="skill-name">React</span>
+            </li>
+            <li>
+              <img class="frames" src="images/redux.png" alt="Redux" />
+              <span class="skill-name">Redux</span>
+            </li>
+            <li>
+              <img
+                class="framesboots"
+                src="images/bootstrap.png"
+                alt="bootstrap"
+              />
               <span class="skill-name">Bootstrap</span>
-                </li>
-                <li>
-              <img src="images\rails.png" alt="rails icon" class="framesrails mobile-view">
+            </li>
+            <li>
+              <img
+                src="images\rails.png"
+                alt="rails icon"
+                class="framesrails mobile-view"
+              />
               <span class="skill-name">Rails</span>
-                </li>
-                <li>
-              <img class="framesskill mobile-view" src="images\github.png" alt="github" >
+            </li>
+            <li>
+              <img
+                class="framesskill mobile-view"
+                src="images\github.png"
+                alt="github"
+              />
               <span class="skill-name">GitHub</span>
-                </li>
-                <li>
-                <img class="framesjest mobile-view" src="images\jest.png" alt="Jest" >
-                <span class="skill-name">Jest</span>
-                </li>
-                <li class="prop">
-                <img class="framessoft mobile-view" id="problemsolve" src="images\problemsolving.png" alt="Problem solving"><span class="skill-name">Creative Problem Solving</span>
-                </li>
-                <li>
-                <img class="framessoft mobile-view" src="images\teamwork.jpeg" alt="Team work" >
-                <span class="skill-name">Collaboration</span>
-                </li>
-                </ul>
-            </div>
-        </section>
+            </li>
+            <li>
+              <img
+                class="framesjest mobile-view"
+                src="images\jest.png"
+                alt="Jest"
+              />
+              <span class="skill-name">Jest</span>
+            </li>
+            <li class="prop">
+              <img
+                class="framessoft mobile-view"
+                id="problemsolve"
+                src="images\problemsolving.png"
+                alt="Problem solving"
+              /><span class="skill-name">Creative Problem Solving</span>
+            </li>
+            <li>
+              <img
+                class="framessoft mobile-view"
+                src="images\teamwork.jpeg"
+                alt="Team work"
+              />
+              <span class="skill-name">Collaboration</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <section id="contact" class="contact">
-        <div class="fieldset">
-            <h2>Contact me</h2>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that
-                needs
-                coding. I’d love to help with it!</p>
-            <form action="https://formspree.io/f/xpzeyzyd" method="post">
-                <label for="fname"><input type="text" name="userName" id="fname" maxlength="30" placeholder="Full Name"
-                        required></label>
-                <label for="email"><input type="email" id="email" name="userEmail" placeholder="Email" required></label>
-                <label for="messages"><textarea name="message" maxlength="500" id="messages"
-                        placeholder="Write your message here" cols="30" rows="10" required></textarea></label>
-                <button type="submit">Get in touch</button>
-            </form>
-            <hr>
-        </div>
+      <div class="fieldset">
+        <h2>Contact me</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+        <form action="https://formspree.io/f/xpzeyzyd" method="post">
+          <label for="fname"
+            ><input
+              type="text"
+              name="userName"
+              id="fname"
+              maxlength="30"
+              placeholder="Full Name"
+              required
+          /></label>
+          <label for="email"
+            ><input
+              type="email"
+              id="email"
+              name="userEmail"
+              placeholder="Email"
+              required
+          /></label>
+          <label for="messages">
+            <textarea
+              name="message"
+              maxlength="500"
+              id="messages"
+              placeholder="Write your message here"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Get in touch</button>
+        </form>
+        <hr />
+      </div>
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
