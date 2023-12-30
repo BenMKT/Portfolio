@@ -88,13 +88,13 @@
             <p>If you have an application you are interested in developing, a feature that you need built or a project that
                 needs
                 coding.I’d love to help with it!</p>
-            <form action="https://formspree.io/f/xpzeyzyd" method="post">
+            <form action="https://formspree.io/f/xpzeyzyd" method="post" >
                 <label for="fname"><input type="text" name="userName" id="fname" maxlength="30" placeholder="Full Name"
                         required></label>
-                <label for="email"><input type="email" id="email" name="userEmail" placeholder="Email" required></label>
+                <label for="email"><input type="email" id="email" name="userEmail" placeholder="Email" pattern="[a-z0-9.]+@[a-z]+\.[a-z]{2,}" required></label>
                 <label for="messages"><textarea name="message" maxlength="500" id="messages"
                         placeholder="Write your message here" cols="30" rows="10" required></textarea></label>
-                <button type="submit">Get in touch</button>
+                <button type="submit">Get in touch</button> 
             </form>
             <hr>
         </div>

@@ -257,3 +257,12 @@ cancelbtn.forEach((button) => {
     close3(popup3);
   });
 });
+
+const email = document.getElementById('email');
+email.addEventListener('input', () => {
+  if (email.validity.patternMismatch) {
+    email.setCustomValidity('Form submission error! Please type a valid email address in lowercase!');
+  } else {
+    email.setCustomValidity('');
+  }
+});
