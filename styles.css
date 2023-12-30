@@ -276,7 +276,7 @@ i:hover {
 }
 
 #poprails {
-  width: 6.25em;
+  width: 6.25rem;
 }
 
 .sql img {
@@ -396,7 +396,7 @@ i:hover {
 }
 
 main {
-  margin-top: 6.25rem;
+  margin-top: 15%;
 }
 
 .main button {
@@ -655,6 +655,7 @@ form {
 
 .popupContainer .linkss {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #close-btn img {
@@ -885,7 +886,7 @@ form {
   }
 
   main {
-    margin-top: 16.25rem;
+    margin-top: 17.25rem;
   }
 
   .content {
@@ -1297,6 +1298,11 @@ form {
     transform: none;
   }
 
+  .popupContainer .linkss {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
   .popup0,
   .popup1,
   .popup2,
@@ -1374,7 +1380,7 @@ form {
   }
 
   #poprails {
-    width: 6.25em;
+    width: 6.25rem;
   }
 
   .sql img {
