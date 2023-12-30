@@ -119,6 +119,28 @@ h2 {
   margin-right: 1.25em;
 }
 
+.sql img {
+  width: 2.3em;
+  height: auto;
+}
+
+.prop img {
+  max-width: 3em;
+  height: 2.5em;
+}
+
+.popupContainer .image1 img {
+  margin-top: 1.25rem;
+  margin-bottom: -1.25rem;
+  min-width: 95%;
+}
+
+.grid-item1 .image1 img {
+  max-width: 80vw;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
 #headerlogo img {
   height: 6.25rem;
   width: 6.25rem;
@@ -256,20 +278,112 @@ i:hover {
   line-height: 1.25rem;
 }
 
-.about {
+#about {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   margin-top: 5rem;
-  border-top-right-radius: 5em;
-  padding-bottom: 9.375rem;
-}
-
-.works {
-  background-color: #e5e5e5;
-  width: 100%;
+  border-top-right-radius: 10em;
+  padding-bottom: 5em;
 }
 
 .image1 {
   align-self: center;
+}
+
+.grid-item1 .image1 {
+  height: 40vh;
+}
+
+#poprails {
+  width: 6.25rem;
+}
+
+.prim-text {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 3.25em;
+  color: #172b4d;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
+}
+
+.skill-name {
+  display: block;
+  font-weight: 600;
+  font-size: 1em;
+  color: #172b4d;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.frames {
+  width: 4.7em;
+  height: auto;
+}
+
+.framesskill {
+  width: 3.5em;
+}
+
+.framesjest {
+  width: 3.4em;
+}
+
+.framessoft {
+  width: 3em;
+  border-radius: 50%;
+}
+
+#problemsolve {
+  border-radius: 50%;
+  width: 5.5em;
+  height: 3em;
+}
+
+#psql {
+  width: 2.5em;
+  height: auto;
+}
+
+.framesboots {
+  width: 6em;
+}
+
+.framesrails {
+  width: 3em;
+}
+
+.skill-set {
+  padding-left: 0;
+  gap: 4em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-set li {
+  border-radius: 50%;
+  height: 5.625em;
+  width: 5.625em;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.framesruby {
+  max-width: 80%;
+}
+
+.works {
+  background-color: #e5e5e5;
+  width: 100vw;
+  margin-top: -15%;
 }
 
 .fa {
@@ -288,7 +402,7 @@ i:hover {
 }
 
 main {
-  margin-top: 6.25rem;
+  margin-top: 15%;
 }
 
 .main button {
@@ -349,7 +463,6 @@ input {
 input::placeholder {
   font-family: Poppins, sans-serif;
   font-size: 1.0625em;
-  vertical-align: center;
   text-align: left;
   color: #172b4d;
   font-weight: 400;
@@ -396,7 +509,6 @@ textarea {
   width: 8.875em;
   height: 3em;
   font-family: Poppins, sans-serif;
-  font-style: medium;
   line-height: 94%;
   font-size: 1.0625em;
   padding: 0.75em 1em;
@@ -404,6 +516,11 @@ textarea {
   background: #fff;
   color: #6070ff;
   letter-spacing: 3%;
+}
+
+.seelive button {
+  font-size: 0.9375rem;
+  margin-right: 0.5rem;
 }
 
 .contact button:hover {
@@ -471,109 +588,97 @@ form {
   pointer-events: all;
 }
 
-@media screen and (max-width: 767px) {
-  .desktop {
-    display: none;
-  }
+.desktop {
+  display: none;
+}
 
-  .nav-menu {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #6070fff7;
-    width: 100%;
-    height: 100%;
-  }
+.nav-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #6070fff7;
+  width: 100%;
+  height: 100%;
+}
 
-  #close-btn {
-    border: none;
-    display: flex;
-    background-color: transparent;
-    width: 95%;
-    height: 5%;
-    margin-top: 2.75rem;
-    padding: 0;
-    justify-content: flex-end;
-  }
+#close-btn {
+  border: none;
+  display: flex;
+  background-color: transparent;
+  width: 95%;
+  height: 5%;
+  margin-top: 2.75rem;
+  padding: 0;
+  justify-content: flex-end;
+}
 
-  .nav-menu ul {
-    list-style-type: none;
-    padding-left: 1.75rem;
-    display: flex;
-    flex-direction: column;
-  }
+.nav-menu ul {
+  list-style-type: none;
+  padding-left: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  .nav-menu li {
-    margin-bottom: 2.5rem;
-  }
+.nav-menu li {
+  margin-bottom: 2.5rem;
+}
 
-  .nav-link {
-    font-size: 2rem;
-    font-weight: 600;
-    font-style: normal;
-    color: #fff;
-    text-decoration: none;
-  }
+.nav-link {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+}
 
-  .deskpopup {
-    display: none;
-  }
+.deskpopup {
+  display: none;
+}
 
-  .popupContainer nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -40px;
-  }
+.popupContainer nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2.5em;
+}
 
-  .popupContainer .seelive {
-    margin-top: 2.5rem;
-    margin-bottom: -12.5rem;
-  }
+.popupContainer .seelive {
+  margin-top: 2.5rem;
+  margin-bottom: -12.5rem;
+}
 
-  .popupContainer .body1 {
-    padding-bottom: 0;
-    padding-left: 0;
-  }
+.popupContainer .body1 {
+  padding-bottom: 0;
+  padding-left: 0;
+}
 
-  .popupContainer .image1 img {
-    margin-top: 1.25rem;
-    margin-bottom: -1.25rem;
-    min-width: 95%;
-  }
+.popupContainer .image1 {
+  width: 100%;
+}
 
-  .popupContainer .image1 {
-    width: 100%;
-  }
+.popupContainer .linkss {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .popupContainer .linkss {
-    display: flex;
-  }
+#close-btn img {
+  position: relative;
+}
 
-  #close-btn img {
-    position: relative;
-  }
+.closepopup {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding-right: 0.625rem;
+}
 
-  .closepopup {
-    border: none;
-    outline: none;
-    margin: 0;
-    padding-right: 0.625rem;
-  }
-
-  .seelive button {
-    font-size: 0.9375rem;
-    margin-right: 0.5rem;
-  }
-
-  .imglive {
-    margin-left: 0.5rem;
-  }
+.imglive {
+  margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
   body {
-    min-width: fit-content;
+    width: fit-content;
   }
 
   #headermenubtn {
@@ -608,7 +713,6 @@ form {
   nav li {
     margin-left: 2rem;
     font-size: 0.9375rem;
-    font-style: medium;
   }
 
   .desktop li {
@@ -688,7 +792,6 @@ form {
     margin-bottom: 0.75rem;
     margin-top: 10rem;
     font-size: 3rem;
-    font-style: bold;
     font-weight: 800;
     color: #091e42;
     letter-spacing: 0.38px;
@@ -748,32 +851,44 @@ form {
     margin-bottom: 0;
   }
 
+  .popupContainer .seelive {
+    margin: 0;
+  }
+
   .set {
     display: flex;
     flex-direction: row;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8.9375rem;
+    align-items: flex-start;
   }
 
   .container .main {
     background: none;
   }
 
-  .about .main {
+  #about {
     display: flex;
+    flex-direction: row;
     height: 57.75rem;
     background-color: #fff;
-    padding: 5em 1.5em 0;
-    border-top-right-radius: 6.25rem;
-    flex-direction: row;
-    margin-bottom: -12.5rem;
+    margin-top: 7rem;
+    border-top-right-radius: 10em;
+    gap: 5em;
+  }
+
+  main {
+    margin-top: 17.25rem;
   }
 
   .content {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex: 0;
-    margin-left: 8.9375rem;
-    margin-right: 3.125rem;
   }
 
   .main .caps {
@@ -782,11 +897,8 @@ form {
     line-height: 1.5em;
     font-weight: 500;
     font-style: normal;
-    margin-top: 0;
-  }
-
-  .content .icons {
-    margin-top: -4.375rem;
+    margin-top: 10%;
+    margin-bottom: -3.5em;
   }
 
   .icons li {
@@ -827,6 +939,16 @@ form {
 
   .stretch img {
     margin-top: 0.625rem;
+  }
+
+  .sql img {
+    width: 2.3em;
+    height: auto;
+  }
+
+  .prop img {
+    max-width: 3em;
+    height: 2.5em;
   }
 
   .image1 img:hover {
@@ -925,8 +1047,27 @@ form {
     transition: 2s all ease-in;
   }
 
+  .skill-set li {
+    border-radius: 50%;
+    height: 5.625em;
+    width: 5.625em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .linkss li:hover {
     transform: rotate(360deg);
+  }
+
+  #liveLink:hover {
+    background-image: linear-gradient(to right, #6070ff, #fff);
+  }
+
+  #sourceLink:hover {
+    background-image: linear-gradient(to right, #6070ff, #fff);
   }
 
   button {
@@ -943,10 +1084,39 @@ form {
 
   button:hover {
     cursor: pointer;
-    color: #fff;
-    background-color: #6070ff;
     box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
     border-radius: 0.5em;
+    animation-name: color-change;
+    animation-duration: 2s;
+  }
+
+  .popup0 .closepopup,
+  .popup1 .closepopup,
+  .popup2 .closepopup,
+  .popup3 .closepopup {
+    border: none;
+    outline: none;
+    margin: 0;
+  }
+
+  .tonic .closepopup:hover {
+    cursor: pointer;
+    background-color: #fff;
+    animation-duration: 0s;
+  }
+
+  @keyframes color-change {
+    /* Define the keyframes for the animation */
+    0%,
+    100% {
+      color: #396df2;
+      background-color: #fff;
+    }
+
+    50% {
+      color: #fff;
+      background-color: #6070ff;
+    }
   }
 
   button:active {
@@ -1023,12 +1193,6 @@ form {
     margin: 0;
   }
 
-  .about {
-    margin-top: 0;
-    padding-top: 6.25rem;
-    background-color: #e5e5e5;
-  }
-
   .works {
     background-color: #e5e5e5;
     width: 100%;
@@ -1037,7 +1201,6 @@ form {
   .contact {
     background-color: #fff;
     margin-top: -18.5rem;
-    min-width: fit-content;
   }
 
   #fname {
@@ -1062,7 +1225,6 @@ form {
   input::placeholder {
     font-family: Poppins, sans-serif;
     font-size: 1.0625em;
-    vertical-align: center;
     text-align: left;
     color: #172b4d;
     font-weight: 400;
@@ -1119,7 +1281,6 @@ form {
     width: 8.875em;
     height: 3em;
     font-family: Poppins, sans-serif;
-    font-style: medium;
     line-height: 94%;
     font-size: 1.0625em;
     padding: 0.75em 1em;
@@ -1161,6 +1322,11 @@ form {
     transform: none;
   }
 
+  .popupContainer .linkss {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   .popup0,
   .popup1,
   .popup2,
@@ -1174,7 +1340,7 @@ form {
   .popup2.active,
   .popup3.active {
     transform: translate(-50%, -50%) scale(1);
-    padding: 0 1.5rem;
+    padding: 2em;
   }
 
   .popup0 .tonic,
@@ -1195,17 +1361,6 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-  }
-
-  .popup0 .closepopup,
-  .popup1 .closepopup,
-  .popup2 .closepopup,
-  .popup3 .closepopup {
-    border: none;
-    outline: none;
-    margin: 0;
-    width: 0.75rem;
-    height: 0.75rem;
   }
 
   .popup0 .image1,
@@ -1237,5 +1392,82 @@ form {
     width: 18.75rem;
     top: -5.3125rem;
     left: 65%;
+  }
+
+  #poprails {
+    width: 6.25rem;
+  }
+
+  .prim-text {
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 3.25em;
+    color: #172b4d;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    height: 14.9375em;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+  .skill-name {
+    display: block;
+    font-weight: 600;
+    font-size: 1em;
+    color: #172b4d;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .frames {
+    width: 4.7em;
+    height: auto;
+  }
+
+  .framesskill {
+    width: 3.5em;
+  }
+
+  .framesjest {
+    width: 3.4em;
+  }
+
+  .framessoft {
+    width: 3em;
+    border-radius: 50%;
+  }
+
+  #problemsolve {
+    border-radius: 50%;
+    width: 5.5em;
+    height: 3em;
+  }
+
+  #psql {
+    width: 2.5em;
+    height: auto;
+  }
+
+  .framesboots {
+    width: 6em;
+  }
+
+  .framesrails {
+    width: 3em;
+  }
+
+  .skill-set {
+    padding-left: 0;
+    gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .framesruby {
+    max-width: 80%;
   }
 }
