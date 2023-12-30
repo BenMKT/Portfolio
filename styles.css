@@ -276,7 +276,7 @@ i:hover {
 }
 
 #poprails {
-  width: 100px;
+  width: 6.25em;
 }
 
 .sql img {
@@ -357,8 +357,8 @@ i:hover {
 
 .skill-set li {
   border-radius: 50%;
-  height: 90px;
-  width: 90px;
+  height: 5.625em;
+  width: 5.625em;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -630,7 +630,7 @@ form {
 .popupContainer nav {
   display: flex;
   justify-content: space-between;
-  margin-top: -40px;
+  margin-top: -2.5em;
 }
 
 .popupContainer .seelive {
@@ -732,7 +732,6 @@ form {
     background-position: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: -3em;
   }
 
   #headerarticle {
@@ -883,6 +882,10 @@ form {
     flex-direction: column;
     margin-left: 8.9375rem;
     align-items: flex-start;
+  }
+
+  main {
+    margin-top: 16.25rem;
   }
 
   .content {
@@ -1371,7 +1374,7 @@ form {
   }
 
   #poprails {
-    width: 100px;
+    width: 6.25em;
   }
 
   .sql img {
@@ -1455,8 +1458,8 @@ form {
 
   .skill-set li {
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
+    height: 5.625em;
+    width: 5.625em;
     list-style-type: none;
     display: flex;
     flex-direction: column;
