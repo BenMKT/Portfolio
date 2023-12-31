@@ -94,7 +94,7 @@ Clone this repository to your desired folder by running this command:
 
 ```sh
   
-  git clone git@github.com:BenMKT/myPortfolio.git
+  git clone git@github.com:BenMKT/Portfolio.git
   ```
 
 ### Install
