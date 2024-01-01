@@ -27,8 +27,9 @@ const worksection = [
     Tonic: 'Space Travelers Hub',
     offer: ['SPACEHUB', 'Front End Dev', '2023'],
     description:
-      "🚀 Space Travelers' Hub! is a single page web application for a company that provides commercial and scientific space travel services. This application allows user's to book rockets and join selected space missions for both leisure and business needs.",
-    descriptionpop1: '🚀☄Space Travelers\' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels. <br><br> To infinity and beyond!! 🌌',
+      "🚀 Looking for an out-of-this-world experience? Our web app taps into real SpaceX's API to offer commercial and scientific space travel services. Book your rocket and join a selected space mission today!",
+    descriptionpop1:
+      '🚀☄Space Travelers\' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels. <br><br> To infinity and beyond!! 🌌',
     liveversion: 'images/Icon.png',
     liveLink: 'https://guileless-halva-645039.netlify.app/',
     source: 'images/Vector.png',
@@ -41,7 +42,7 @@ const worksection = [
     Tonic: 'Recipe App',
     offer: ['MYCAFE', 'Full Stack Dev', '2023'],
     description:
-      'Cooking has never been this convenient! <br><br> Simplify your kitchen adventures with our Recipe app which keeps track of all your recipes, ingredients, and inventory.',
+      'Looking for an easier way to manage your kitchen? Our Recipe app has got you covered! Keep track of all your recipes, ingredients, and inventory, and even generate a shopping list with just a few taps. Say goodbye to kitchen chaos and hello to stress-free cooking!',
     descriptionpop1: `Introducing the Recipe App: Your all-in-one solution for effortless cooking! <br><br>
     Seamlessly organize your recipes, ingredients, and pantry items. Craft delicious recipes with ease, generate smart shopping lists, and even share your culinary creations with the world. <br><br> Cooking has never been this convenient – simplify your kitchen adventures with our Recipe app!`,
     liveversion: 'images/Icon.png',
@@ -56,9 +57,9 @@ const worksection = [
     Tonic: 'Smart Budget App',
     offer: ['FINANCE', 'Full Stack Dev', '2023'],
     description:
-      '💰💼 Track and manage your budget effortlessly with this web application.',
+      '💰💼 Gain control of your finances by categorizing your transactions and unlocking valuable insights into your spending habits. Make smarter decisions with ease!',
     descriptionpop1: `<br><br><br>
-    💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions.`,
+    💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions in a glance.`,
     liveversion: 'images/Icon.png',
     liveLink: 'https://smartbudgetapp-v1wv.onrender.com/',
     source: 'images/Vector.png',
@@ -71,7 +72,7 @@ const worksection = [
     Tonic: 'TripTrek App',
     offer: ['TRAVEL', 'Back End Dev', '2023'],
     description:
-      "🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip, our user-friendly platform ensures a seamless and convenient booking process.",
+      '🌎 Discover a new level of travel with our hassle-free car booking app. Book your ride now in almost anywhere on the planet and experience the freedom of the open road.',
     descriptionpop1: `🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip.<br><br>
     Our user-friendly platform ensures a seamless and convenient booking process, allowing you to choose from a diverse fleet of reliable vehicles. Experience the freedom of the open road as TripTrek takes care of the details, making your travel adventures memorable and stress-free.<br><br>
     Embrace the joy of exploration with TripTrek – your trusted companion for every road ahead.`,
