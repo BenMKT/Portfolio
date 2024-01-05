@@ -71,7 +71,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://benmkt.github.io/Portfolio/)
-- View [video](https://www.loom.com/share/d9ac06bbacce4bc2b42e0985d5095453) walkthrough
+<!-- View [video](https://www.loom.com/share/d9ac06bbacce4bc2b42e0985d5095453) walkthrough -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
