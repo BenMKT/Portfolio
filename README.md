@@ -62,7 +62,7 @@
 
 - **HTML & CSS Linters integration**
 - **Dynamic webpage through Javascript adoption**
-- **[More Coming Soon]**
+- **Webpage responsiveness on generally all devices.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,6 @@ Example:
 
 - [ ] **More beautiful upcoming CSS webpage styles.**
 - [ ] **Form validation**
-- [ ] **Webpage responsiveness on generally all devices.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
