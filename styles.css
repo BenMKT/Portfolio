@@ -738,11 +738,15 @@ form {
     margin-left: 16.25rem;
     width: 57.5rem;
     margin-bottom: 5rem;
+    margin-top: 12rem;
   }
 
   #headertoolbar {
-    margin-top: -1.5rem;
+    margin-top: 0.2rem;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   #headerlogo a {
