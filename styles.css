@@ -42,14 +42,17 @@ h2 {
   font-size: 2.8125rem;
   line-height: 3.25rem;
   color: #172b4d;
+  margin-top: 10rem;
 }
 
 #headertoolbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8rem;
-  margin-top: -1.875rem;
+  margin-top: 0.2rem;
 }
 
 #headermenubtn {
