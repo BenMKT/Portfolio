@@ -38,7 +38,7 @@ const worksection = [
   },
   {
     class: 'grid-item1 stories single',
-    snapshoot: 'images/Recipe App1.png',
+    snapshoot: 'images/Recipe App4.png',
     Tonic: 'Recipe App',
     offer: ['MYCAFE', 'Full Stack Dev', '2023'],
     description:
