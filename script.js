@@ -68,19 +68,17 @@ const worksection = [
   },
   {
     class: 'grid-item1 stories',
-    snapshoot: 'images/TripTrek Screenshot.png',
-    Tonic: 'TripTrek App',
-    offer: ['TRAVEL', 'Back End Dev', '2023'],
+    snapshoot: 'images/Math Magician.png',
+    Tonic: 'Math Magician',
+    offer: ['EDUCATION', 'Front End Dev', '2023'],
     description:
-      '🌎 Discover a new level of travel with our hassle-free car booking app. Book your ride now in almost anywhere on the planet and experience the freedom of the open road.',
-    descriptionpop1: `🌎 TripTrek is an innovative car booking application designed to elevate your travel experience. With TripTrek, effortlessly reserve a vehicle for your journeys, whether it's a quick city escape or a scenic road trip.<br><br>
-    Our user-friendly platform ensures a seamless and convenient booking process, allowing you to choose from a diverse fleet of reliable vehicles. Experience the freedom of the open road as TripTrek takes care of the details, making your travel adventures memorable and stress-free.<br><br>
-    Embrace the joy of exploration with TripTrek – your trusted companion for every road ahead.`,
+      "Are you a math enthusiast? Check out this awesome website! It's a Single Page App (SPA) that lets you do quick calculations and read some fun math-related quotes. Give it a try!",
+    descriptionpop1: 'Math Magicians is a WebApp for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations while reading random math-related quotes.',
     liveversion: 'images/Icon.png',
-    liveLink: 'https://triptrek-7690.onrender.com/',
+    liveLink: 'https://benmkt-math-magicians.onrender.com',
     source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/TripTrek-API',
-    skills: ['HTML5', 'CSS3', 'React', 'PostgreSQL', 'Ruby on Rails'],
+    sourceLink: 'https://github.com/BenMKT/math-magicians',
+    skills: ['HTML5', 'CSS3', 'React', 'Redux', 'JavaScript'],
   },
 ];
 
