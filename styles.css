@@ -330,6 +330,12 @@ i:hover {
   height: auto;
 }
 
+.skill-icon {
+  width: 3.5em;
+  height: 3.5em;
+  object-fit: contain;
+}
+
 .framesskill {
   width: 3.5em;
 }
@@ -1434,6 +1440,12 @@ form {
   .frames {
     width: 4.7em;
     height: auto;
+  }
+
+  .skill-icon {
+    width: 3.5em;
+    height: 3.5em;
+    object-fit: contain;
   }
 
   .framesskill {
