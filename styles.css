@@ -348,7 +348,7 @@ i:hover {
 }
 
 #poprails {
-  width: 7.25rem;
+  width: 6.25rem;
 }
 
 .prim-text {
@@ -1484,12 +1484,12 @@ form {
     align-items: flex-start;
     position: relative;
     width: 18.75rem;
-    top: -1.3125rem;
+    top: -5.3125rem;
     left: 65%;
   }
 
   #poprails {
-    width: 7.25rem;
+    width: 6.25rem;
   }
 
   .prim-text {
