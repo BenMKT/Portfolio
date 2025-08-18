@@ -138,15 +138,29 @@ h2 {
 }
 
 .popupContainer .image1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 1.25rem;
   margin-bottom: -1.25rem;
   min-width: 95%;
 }
 
 .grid-item1 .image1 img {
-  max-width: 80vw;
-  border-radius: 0.5rem;
-  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item1 .image1 img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -157,23 +171,45 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
-  gap: 5em;
+  grid-template-columns: 1fr;
+  gap: 3rem;
   background-color: #fff;
-  padding: 0.625em;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid-item1 {
-  background-color: rgb(255, 255, 255, 1);
-  text-align: center;
-  padding: 1.25em 0;
-  font-size: 0.9375em;
-  border-radius: 1em;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
 }
 
 .body1 {
   text-align: left;
-  padding: 1.25em;
+  padding: 2rem;
+}
+
+.body1 h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #172b4d;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.body1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #344563;
+  margin-bottom: 1.5rem;
 }
 
 .tonic {
@@ -186,17 +222,29 @@ h2 {
   flex-direction: column;
 }
 
+.linkss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .linkss li {
-  color: #0018f5;
+  color: #6070ff;
   display: inline-block;
   border: 1px solid #ebebff;
   background-color: #ebebff;
-  border-radius: 0.5rem;
-  padding: 0.375em;
-  margin: 0 0.31em 0 0;
-  font-size: 0.8125em;
-  letter-spacing: 0.03em;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.linkss li:hover {
+  background-color: #6070ff;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 button {
@@ -557,18 +605,20 @@ form {
 .popup1,
 .popup2,
 .popup3 {
-  transition: 250ms ease-in-out;
-  width: 88%;
-  height: 90%;
+  transition: 300ms ease-in-out;
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  border-radius: 0.785rem;
+  border-radius: 1rem;
   z-index: 10;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow: hidden;
   display: block;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
 .popup0.active,
@@ -576,7 +626,6 @@ form {
 .popup2.active,
 .popup3.active {
   transform: translate(-50%, -50%) scale(1);
-  padding: 1rem;
 }
 
 #overlay {
@@ -650,21 +699,47 @@ form {
 .popupContainer nav {
   display: flex;
   justify-content: space-between;
-  margin-top: -2.5em;
+  align-items: center;
+  padding: 2rem 2rem 1rem;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.popupContainer nav h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #172b4d;
+  margin: 0;
 }
 
 .popupContainer .seelive {
-  margin-top: 2.5rem;
-  margin-bottom: -12.5rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.popupContainer .seelive button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .popupContainer .body1 {
-  padding-bottom: 0;
-  padding-left: 0;
+  padding: 2rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.popupContainer .body1 .tonic {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #344563;
+  margin-bottom: 2rem;
 }
 
 .popupContainer .image1 {
   width: 100%;
+  padding: 0 2rem;
 }
 
 .popupContainer .linkss {
@@ -688,6 +763,18 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  .grid-item1 .image1 img {
+    height: 240px;
+  }
+
+  .popup0,
+  .popup1,
+  .popup2,
+  .popup3 {
+    width: 85%;
+    max-width: 1000px;
+  }
+
   body {
     width: fit-content;
   }
@@ -1340,14 +1427,6 @@ form {
   .popupContainer .linkss {
     display: flex;
     flex-wrap: nowrap;
-  }
-
-  .popup0,
-  .popup1,
-  .popup2,
-  .popup3 {
-    padding-bottom: 0;
-    overflow-x: hidden;
   }
 
   .popup0.active,
