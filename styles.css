@@ -348,7 +348,7 @@ i:hover {
 }
 
 #poprails {
-  width: 6.25rem;
+  width: 7.25rem;
 }
 
 .prim-text {
@@ -745,7 +745,6 @@ form {
 .popupContainer .linkss {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
 }
 
 #close-btn img {
@@ -1485,12 +1484,12 @@ form {
     align-items: flex-start;
     position: relative;
     width: 18.75rem;
-    top: -5.3125rem;
+    top: -1.3125rem;
     left: 65%;
   }
 
   #poprails {
-    width: 6.25rem;
+    width: 7.25rem;
   }
 
   .prim-text {
