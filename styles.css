@@ -150,11 +150,10 @@ h2 {
   border-radius: 0.5rem;
   height: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .grid-item1 .image1 img:hover {
-  transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
@@ -206,13 +205,6 @@ h2 {
   font-size: 0.8125em;
   letter-spacing: 0.03em;
   font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.linkss li:hover {
-  background-color: #6070ff;
-  color: #fff;
-  transform: translateY(-2px);
 }
 
 button {
@@ -1422,7 +1414,7 @@ form {
     align-items: flex-start;
     position: relative;
     width: 18.75rem;
-    top: -5.3125rem;
+    top: -2.3125rem;
     left: 65%;
   }
 
