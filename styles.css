@@ -745,6 +745,7 @@ form {
 .popupContainer .linkss {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 #close-btn img {
