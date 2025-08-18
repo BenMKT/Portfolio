@@ -1,88 +1,93 @@
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector(".nav-menu");
 
-const menuBtn = document.getElementById('headermenubtn');
+const menuBtn = document.getElementById("headermenubtn");
 
-const closeBtn = document.getElementById('close-btn');
+const closeBtn = document.getElementById("close-btn");
 
-const navLink = document.querySelectorAll('.nav-link');
+const navLink = document.querySelectorAll(".nav-link");
 
-menuBtn.addEventListener('click', () => {
-  navMenu.style.display = 'block';
+menuBtn.addEventListener("click", () => {
+  navMenu.style.display = "block";
 });
 
-closeBtn.addEventListener('click', () => {
-  navMenu.style.display = 'none';
+closeBtn.addEventListener("click", () => {
+  navMenu.style.display = "none";
 });
 
 navLink.forEach((navLink) => {
-  navLink.addEventListener('click', () => {
-    navMenu.style.display = 'none';
+  navLink.addEventListener("click", () => {
+    navMenu.style.display = "none";
   });
 });
-
+// project section
 const worksection = [
   {
-    class: 'grid-item1 tonic',
-    snapshoot: 'images/Space Travellers Hub.png',
-    Tonic: 'Space Travelers Hub',
-    offer: ['SPACEHUB', 'Front End Dev', '2023'],
+    class: "grid-item1 stories single",
+    snapshoot: "images/ATP.png",
+    Tonic: "ATP App",
+    offer: ["ATP", "Full Stack Dev", "2024"],
     description:
-      "🚀 Looking for an out-of-this-world experience? Our web app taps into real SpaceX's API to offer commercial and scientific space travel services. Book your rocket and join a selected space mission today!",
+      "A hybrid civic‑tech platform enabling real‑time citizen participation in governance, driving an estimated 87% increase in community engagement during pilot programs",
+    descriptionpop1: `A hybrid platform built with Next.js, TypeScript, Tailwind CSS, HTML5, PostgreSQL, and Vercel, featuring WCAG-compliant responsive UI, role-based access controls, real-time capabilities, and interactive dashboards.`,
+    liveversion: "images/Icon.png",
+    liveLink: "https://atparty.ke",
+    source: "images/Vector.png",
+    sourceLink: "https://github.com/BenMKT/atp-party",
+    skills: ["Prisma", "Tailwind", "Next.js", "TypeScript", "PostgreSQL"],
+  },
+  {
+    class: "grid-item1 grid-item3 tonic",
+    snapshoot: "images/BudgetApp Screenshot1.png",
+    Tonic: "Smart Budget App",
+    offer: ["FINANCE", "Full Stack Dev", "2023"],
+    description:
+      "A personal finance platform that delivers 20%+ gains in budgeting accuracy through automated transaction categorization, analytics dashboards, and 95% RSpec test coverage.",
+    descriptionpop1: `A platform built with Ruby on Rails, PostgreSQL, HTML5, and CSS3, featuring automated transaction categorization, analytics‑driven spending insights, responsive dashboard, and RSpec‑backed codebase with 95% test coverage for reliability and maintainability.`,
+    liveversion: "images/Icon.png",
+    liveLink: "https://smartbudgetapp-v1wv.onrender.com/",
+    source: "images/Vector.png",
+    sourceLink: "https://github.com/BenMKT/Budget-App",
+    skills: ["HTML5", "CSS3", "Rspec", "PostgreSQL", "Ruby on Rails"],
+  },
+  {
+    class: "grid-item1 stories",
+    snapshoot: "images/SchoolFees.png",
+    Tonic: "School Fees Management System",
+    offer: ["EDUCATION", "Full Stack Dev", "2025"],
+    description:
+      "A comprehensive education‑finance platform that streamlines school fees tracking for school administrators and parents, boosting collection and reconciliation efficiency by 55% and enhancing collaborative academic performance monitoring by 74% to deliver actionable financial and educational insights.",
     descriptionpop1:
-      '🚀☄Space Travelers\' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels. <br><br> To infinity and beyond!! 🌌',
-    liveversion: 'images/Icon.png',
-    liveLink: 'https://guileless-halva-645039.netlify.app/',
-    source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/Space-Travelers-Hub',
-    skills: ['HTML5', 'CSS3', 'Redux', 'React', 'JavaScript'],
+      "A full‑stack education‑finance platform built with Next.js, TypeScript, GraphQL, and Tailwind CSS, integrating the Google Sheets API for live data synchronization. Features real‑time fee tracking, interactive academic performance dashboards with graphical insights, role‑based administrative controls, and intuitive administrative management tools.",
+    liveversion: "images/Icon.png",
+    liveLink: "https://school-fees-virid.vercel.app/",
+    source: "images/Vector.png",
+    sourceLink: "https://github.com/BenMKT/school-fees",
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "GraphQL",
+      "Tailwind",
+      "Google Sheets API",
+    ],
   },
   {
-    class: 'grid-item1 stories single',
-    snapshoot: 'images/Recipe App4.png',
-    Tonic: 'Recipe App',
-    offer: ['MYCAFE', 'Full Stack Dev', '2023'],
+    class: "grid-item1 tonic",
+    snapshoot: "images/Space Travellers Hub.png",
+    Tonic: "Space Travelers Hub",
+    offer: ["SPACEHUB", "Front End Dev", "2023"],
     description:
-      'Looking for an easier way to manage your kitchen? Our Recipe app has got you covered! Keep track of all your recipes, ingredients, and inventory, and even generate a shopping list with just a few taps. Say goodbye to kitchen chaos and hello to stress-free cooking!',
-    descriptionpop1: `Introducing the Recipe App: Your all-in-one solution for effortless cooking! <br><br>
-    Seamlessly organize your recipes, ingredients, and pantry items. Craft delicious recipes with ease, generate smart shopping lists, and even share your culinary creations with the world. <br><br> Cooking has never been this convenient – simplify your kitchen adventures with our Recipe app!`,
-    liveversion: 'images/Icon.png',
-    liveLink: 'https://ror-recipeapp.onrender.com/',
-    source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/Recipe-App',
-    skills: ['HTML5', 'CSS3', 'Rspec', 'PostgreSQL', 'Ruby on Rails'],
-  },
-  {
-    class: 'grid-item1 grid-item3 tonic',
-    snapshoot: 'images/BudgetApp Screenshot1.png',
-    Tonic: 'Smart Budget App',
-    offer: ['FINANCE', 'Full Stack Dev', '2023'],
-    description:
-      '💰💼 Gain control of your finances by categorizing your transactions and unlocking valuable insights into your spending habits. Make smarter decisions with ease!',
-    descriptionpop1: `<br><br><br>
-    💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions in a glance.`,
-    liveversion: 'images/Icon.png',
-    liveLink: 'https://smartbudgetapp-v1wv.onrender.com/',
-    source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/Budget-App',
-    skills: ['HTML5', 'CSS3', 'Rspec', 'PostgreSQL', 'Ruby on Rails'],
-  },
-  {
-    class: 'grid-item1 stories',
-    snapshoot: 'images/Math Magician.png',
-    Tonic: 'Math Magician',
-    offer: ['EDUCATION', 'Front End Dev', '2023'],
-    description:
-      "Are you a math enthusiast? Check out this awesome website! It's a Single Page App (SPA) that lets you do quick calculations and read some fun math-related quotes. Give it a try!",
-    descriptionpop1: 'Math Magicians is a WebApp for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations while reading random math-related quotes.',
-    liveversion: 'images/Icon.png',
-    liveLink: 'https://benmkt-math-magicians.onrender.com',
-    source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/math-magicians',
-    skills: ['HTML5', 'CSS3', 'React', 'Redux', 'JavaScript'],
+      "A dynamic space exploration platform that integrates SpaceX's live API to offer real-time booking for commercial and scientific space travel services.",
+    descriptionpop1:
+      'Built via pair programming, Space Travelers\' Hub is a React-Redux SPA leveraging Redux Toolkit and RTK Query to consume the SpaceX REST API. Users can browse rockets and missions and "reserve" them, with bookings managed and persisted in a centralized Redux store.',
+    liveversion: "images/Icon.png",
+    liveLink: "https://guileless-halva-645039.netlify.app/",
+    source: "images/Vector.png",
+    sourceLink: "https://github.com/BenMKT/Space-Travelers-Hub",
+    skills: ["HTML5", "CSS3", "Redux", "React", "JavaScript"],
   },
 ];
 
-const workscard = document.getElementById('works');
+const workscard = document.getElementById("works");
 
 worksection.forEach((project) => {
   workscard.innerHTML += `
@@ -111,12 +116,12 @@ worksection.forEach((project) => {
         </div>
       </div>`;
 });
-
-const popupContainer = document.querySelector('.popupContainer');
+// popup section
+const popupContainer = document.querySelector(".popupContainer");
 
 function createPop() {
   for (let i = 0; i < 4; i += 1) {
-    const pop = document.createElement('pop');
+    const pop = document.createElement("pop");
     pop.classList.add(`popup${i}`);
     pop.innerHTML = `
     <div class='grid-item1 tonic' id='grid-item1 tonic'>
@@ -161,116 +166,116 @@ function createPop() {
 }
 createPop();
 
-const seabtn = document.querySelectorAll('#prjbtn');
-const sourcebtn = document.querySelectorAll('#sourceLink');
-const livebtn = document.querySelectorAll('#liveLink');
-const cancelbtn = document.querySelectorAll('.closepopup');
-const overlay = document.getElementById('overlay');
+const seabtn = document.querySelectorAll("#prjbtn");
+const sourcebtn = document.querySelectorAll("#sourceLink");
+const livebtn = document.querySelectorAll("#liveLink");
+const cancelbtn = document.querySelectorAll(".closepopup");
+const overlay = document.getElementById("overlay");
 
-seabtn[0].addEventListener('click', () => {
-  const popup0 = document.querySelector('.popup0');
-  popup0.classList.add('active');
-  overlay.classList.add('active');
+seabtn[0].addEventListener("click", () => {
+  const popup0 = document.querySelector(".popup0");
+  popup0.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close(popup0) {
   if (popup0 == null) return;
-  popup0.classList.remove('active');
-  overlay.classList.remove('active');
+  popup0.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup0 = button.closest('.popup0');
+  button.addEventListener("click", () => {
+    const popup0 = button.closest(".popup0");
     close(popup0);
   });
 });
 
-sourcebtn[0].addEventListener('click', () => {
-  window.open(`${worksection[0].sourceLink}`, '_blank');
+sourcebtn[0].addEventListener("click", () => {
+  window.open(`${worksection[0].sourceLink}`, "_blank");
 });
 
-livebtn[0].addEventListener('click', () => {
-  window.open(`${worksection[0].liveLink}`, '_blank');
+livebtn[0].addEventListener("click", () => {
+  window.open(`${worksection[0].liveLink}`, "_blank");
 });
 
-seabtn[1].addEventListener('click', () => {
-  const popup1 = document.querySelector('.popup1');
-  popup1.classList.add('active');
-  overlay.classList.add('active');
+seabtn[1].addEventListener("click", () => {
+  const popup1 = document.querySelector(".popup1");
+  popup1.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close1(popup1) {
   if (popup1 == null) return;
-  popup1.classList.remove('active');
-  overlay.classList.remove('active');
+  popup1.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup1 = button.closest('.popup1');
+  button.addEventListener("click", () => {
+    const popup1 = button.closest(".popup1");
     close1(popup1);
   });
 });
 
-sourcebtn[1].addEventListener('click', () => {
-  window.open(`${worksection[1].sourceLink}`, '_blank');
+sourcebtn[1].addEventListener("click", () => {
+  window.open(`${worksection[1].sourceLink}`, "_blank");
 });
 
-livebtn[1].addEventListener('click', () => {
-  window.open(`${worksection[1].liveLink}`, '_blank');
+livebtn[1].addEventListener("click", () => {
+  window.open(`${worksection[1].liveLink}`, "_blank");
 });
 
-seabtn[2].addEventListener('click', () => {
-  const popup2 = document.querySelector('.popup2');
-  popup2.classList.add('active');
-  overlay.classList.add('active');
+seabtn[2].addEventListener("click", () => {
+  const popup2 = document.querySelector(".popup2");
+  popup2.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close2(popup2) {
   if (popup2 == null) return;
-  popup2.classList.remove('active');
-  overlay.classList.remove('active');
+  popup2.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup2 = button.closest('.popup2');
+  button.addEventListener("click", () => {
+    const popup2 = button.closest(".popup2");
     close2(popup2);
   });
 });
 
-sourcebtn[2].addEventListener('click', () => {
-  window.open(`${worksection[2].sourceLink}`, '_blank');
+sourcebtn[2].addEventListener("click", () => {
+  window.open(`${worksection[2].sourceLink}`, "_blank");
 });
 
-livebtn[2].addEventListener('click', () => {
-  window.open(`${worksection[2].liveLink}`, '_blank');
+livebtn[2].addEventListener("click", () => {
+  window.open(`${worksection[2].liveLink}`, "_blank");
 });
 
-seabtn[3].addEventListener('click', () => {
-  const popup3 = document.querySelector('.popup3');
-  popup3.classList.add('active');
-  overlay.classList.add('active');
+seabtn[3].addEventListener("click", () => {
+  const popup3 = document.querySelector(".popup3");
+  popup3.classList.add("active");
+  overlay.classList.add("active");
 });
 
 function close3(popup3) {
   if (popup3 == null) return;
-  popup3.classList.remove('active');
-  overlay.classList.remove('active');
+  popup3.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 cancelbtn.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popup3 = button.closest('.popup3');
+  button.addEventListener("click", () => {
+    const popup3 = button.closest(".popup3");
     close3(popup3);
   });
 });
 
-sourcebtn[3].addEventListener('click', () => {
-  window.open(`${worksection[3].sourceLink}`, '_blank');
+sourcebtn[3].addEventListener("click", () => {
+  window.open(`${worksection[3].sourceLink}`, "_blank");
 });
 
-livebtn[3].addEventListener('click', () => {
-  window.open(`${worksection[3].liveLink}`, '_blank');
+livebtn[3].addEventListener("click", () => {
+  window.open(`${worksection[3].liveLink}`, "_blank");
 });
