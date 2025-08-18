@@ -201,7 +201,7 @@ h2 {
   background-color: #ebebff;
   border-radius: 0.5rem;
   padding: 0.375em;
-  margin: 0 0.31em 0 0;
+  margin: 0.31em 0.31em 0 0;
   font-size: 0.8125em;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -308,7 +308,7 @@ i:hover {
 }
 
 #poprails {
-  width: 6.25rem;
+  width: 8.5rem;
 }
 
 .prim-text {
@@ -689,7 +689,6 @@ form {
   border: none;
   outline: none;
   margin: 0;
-  padding-right: 0.625rem;
 }
 
 .imglive {
@@ -846,7 +845,7 @@ form {
   .tonic p {
     color: #344563;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
   }
 
@@ -1414,12 +1413,12 @@ form {
     align-items: flex-start;
     position: relative;
     width: 18.75rem;
-    top: -2.3125rem;
+    top: -3.3125rem;
     left: 65%;
   }
 
   #poprails {
-    width: 6.25rem;
+    width: 8.5rem;
   }
 
   .prim-text {
