@@ -25,15 +25,15 @@ const worksection = [
     class: "grid-item1 stories single",
     snapshoot: "images/ATP.png",
     Tonic: "ATP App",
-    offer: ["ATP", "Full Stack Dev", "2024"],
+    offer: ["GOVERNANCE", "Full Stack Dev", "2024"],
     description:
-      "A hybrid civic‑tech platform enabling real‑time citizen participation in governance, driving an estimated 87% increase in community engagement during pilot programs",
-    descriptionpop1: `A hybrid platform built with Next.js, TypeScript, Tailwind CSS, HTML5, PostgreSQL, and Vercel, featuring WCAG-compliant responsive UI, role-based access controls, real-time capabilities, and interactive dashboards.`,
+      "A hybrid civic‑tech platform enabling real‑time citizen participation in governance, driving an estimated 87% increase in community engagement during pilot programs.",
+    descriptionpop1: `A full-stack hybrid platform engineered with Next.js, TypeScript, Prisma, PostgreSQL, and deployed seamlessly on Vercel. It features secure authentication via NextAuth, real-time messaging through Twilio, Redis-powered caching, and extended backend capabilities using Supabase. The frontend delivers a beautiful, animated, WCAG-compliant, responsive UI crafted with Tailwind CSS, DaisyUI, ShadcnUI, Framer Motion, and Recharts—enabling dynamic dashboards and interactive user experiences. Core features include role-based access control, encrypted data handling with Bcrypt, and scheduled tasks via Cron. Robust unit and integration testing are implemented using Jest to ensure reliability across both frontend and backend workflows.`,
     liveversion: "images/Icon.png",
     liveLink: "https://atparty.ke",
     source: "images/Vector.png",
     sourceLink: "https://github.com/BenMKT/atp-party",
-    skills: ["Prisma", "Tailwind", "Next.js", "TypeScript", "PostgreSQL"],
+    skills: ["Jest", "Next.js", "Tailwind", "NextAuth", "TypeScript"],
   },
   {
     class: "grid-item1 grid-item3 tonic",
@@ -41,13 +41,13 @@ const worksection = [
     Tonic: "Smart Budget App",
     offer: ["FINANCE", "Full Stack Dev", "2023"],
     description:
-      "A personal finance platform that delivers 20%+ gains in budgeting accuracy through automated transaction categorization, analytics dashboards, and 95% RSpec test coverage.",
-    descriptionpop1: `A platform built with Ruby on Rails, PostgreSQL, HTML5, and CSS3, featuring automated transaction categorization, analytics‑driven spending insights, responsive dashboard, and RSpec‑backed codebase with 95% test coverage for reliability and maintainability.`,
+      "A personal finance platform that delivers 20%+ gains in budgeting accuracy through automated transaction categorization and 95% test-backed coverage to ensure reliability, maintainability, and confidence in user-facing workflows.",
+    descriptionpop1: `A budget management platform developed with Ruby on Rails, PostgreSQL, and  deployed on Render. It features automated transaction categorization and robust role-based access control via Devise and CanCanCan. The codebase is backed by RSpec and Capybara tests, achieving 95% coverage to ensure reliability, maintainability, and confidence in user-facing workflows.`,
     liveversion: "images/Icon.png",
     liveLink: "https://smartbudgetapp-v1wv.onrender.com/",
     source: "images/Vector.png",
     sourceLink: "https://github.com/BenMKT/Budget-App",
-    skills: ["HTML5", "CSS3", "Rspec", "PostgreSQL", "Ruby on Rails"],
+    skills: ["Rspec", "Devise", "PostgreSQL", "CanCanCan", "Ruby on Rails"],
   },
   {
     class: "grid-item1 stories",
@@ -57,7 +57,7 @@ const worksection = [
     description:
       "A comprehensive education‑finance platform that streamlines school fees tracking for school administrators and parents, boosting collection and reconciliation efficiency by 55% and enhancing collaborative academic performance monitoring by 74% to deliver actionable financial and educational insights.",
     descriptionpop1:
-      "A full‑stack education‑finance platform built with Next.js, TypeScript, GraphQL, and Tailwind CSS, integrating the Google Sheets API for live data synchronization. Features real‑time fee tracking, interactive academic performance dashboards with graphical insights, role‑based administrative controls, and intuitive administrative management tools.",
+      "A full-stack education finance platform built with Next.js, TypeScript, Radix UI, and deployed on Vercel. It leverages PostgreSQL for structured data storage and Prisma ORM for efficient querying. Authentication is handled securely via NextAuth, with Twilio integrated for messaging and the Google Sheets API used for real-time data synchronization with administrative workflows. The frontend features a responsive interface styled with Tailwind CSS and animated using Framer Motion. Interactive dashboards powered by Recharts provide live fee tracking and academic performance insights. Additional capabilities include role-based access controls, encrypted credential handling with Bcrypt, and intuitive management tools tailored for school administrators.",
     liveversion: "images/Icon.png",
     liveLink: "https://school-fees-virid.vercel.app/",
     source: "images/Vector.png",
@@ -65,7 +65,7 @@ const worksection = [
     skills: [
       "Next.js",
       "TypeScript",
-      "GraphQL",
+      "Recharts",
       "Tailwind",
       "Google Sheets API",
     ],
@@ -74,16 +74,16 @@ const worksection = [
     class: "grid-item1 tonic",
     snapshoot: "images/Space Travellers Hub.png",
     Tonic: "Space Travelers Hub",
-    offer: ["SPACEHUB", "Front End Dev", "2023"],
+    offer: ["TRAVEL", "Front End Dev", "2023"],
     description:
       "A dynamic space exploration platform that integrates SpaceX's live API to offer real-time booking for commercial and scientific space travel services.",
     descriptionpop1:
-      'Built via pair programming, Space Travelers\' Hub is a React-Redux SPA leveraging Redux Toolkit and RTK Query to consume the SpaceX REST API. Users can browse rockets and missions and "reserve" them, with bookings managed and persisted in a centralized Redux store.',
+      "Developed through pair programming, Space Travelers' Hub is a single-page React application powered by Redux Toolkit and RTK Query for efficient state management and API consumption. Built with Vite for rapid development and optimized bundling, the platform interfaces with the SpaceX REST API to enable users to browse and reserve rockets and missions. Bookings are managed in a centralized Redux store, ensuring consistent state across views. The codebase is rigorously tested with Vitest to maintain reliability and confidence in user interactions.",
     liveversion: "images/Icon.png",
     liveLink: "https://guileless-halva-645039.netlify.app/",
     source: "images/Vector.png",
     sourceLink: "https://github.com/BenMKT/Space-Travelers-Hub",
-    skills: ["HTML5", "CSS3", "Redux", "React", "JavaScript"],
+    skills: ["CSS3", "React", "Redux", "Vitest", "JavaScript"],
   },
 ];
 
