@@ -36,7 +36,7 @@ const worksection = [
     skills: ["Jest", "Next.js", "Tailwind", "NextAuth", "TypeScript"],
   },
   {
-    class: "grid-item1 grid-item3 tonic",
+    class: "grid-item1 grid-item3 tonic description",
     snapshoot: "images/BudgetApp Screenshot1.png",
     Tonic: "Smart Budget App",
     offer: ["FINANCE", "Full Stack Dev", "2023"],
@@ -71,7 +71,7 @@ const worksection = [
     ],
   },
   {
-    class: "grid-item1 tonic",
+    class: "grid-item1 tonic description",
     snapshoot: "images/Space Travellers Hub.png",
     Tonic: "Space Travelers Hub",
     offer: ["TRAVEL", "Front End Dev", "2023"],

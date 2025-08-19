@@ -663,7 +663,6 @@ form {
 }
 
 .popupContainer .seelive {
-  margin-top: 2.5rem;
   margin-bottom: -12.5rem;
 }
 
@@ -688,13 +687,27 @@ form {
 .closepopup {
   border: none;
   outline: none;
-  margin: 0;
+  height: min-content;
+}
+
+.closepopup:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#liveLink:hover {
+  background-image: linear-gradient(to right, #6070ff, #fff);
+}
+
+#sourceLink:hover {
+  background-image: linear-gradient(to right, #6070ff, #fff);
 }
 
 .imglive {
   margin-left: 0.5rem;
 }
 
+/* Desktop Styles */
 @media screen and (min-width: 768px) {
   body {
     width: fit-content;
@@ -852,8 +865,12 @@ form {
   .stories p {
     color: #344563;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .description p {
+    margin-top: 1.5rem;
   }
 
   .contact p {
