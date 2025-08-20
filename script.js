@@ -14,71 +14,78 @@ closeBtn.addEventListener('click', () => {
   navMenu.style.display = 'none';
 });
 
-navLink.forEach((navLink) => {
-  navLink.addEventListener('click', () => {
+navLink.forEach((link) => {
+  link.addEventListener('click', () => {
     navMenu.style.display = 'none';
   });
 });
-
+// project section
 const worksection = [
   {
-    class: 'grid-item1 tonic',
-    snapshoot: 'images/Space Travellers Hub.png',
-    Tonic: 'Space Travelers Hub',
-    offer: ['SPACEHUB', 'Front End Dev', '2023'],
-    description:
-      "🚀 Looking for an out-of-this-world experience? Our web app taps into real SpaceX's API to offer commercial and scientific space travel services. Book your rocket and join a selected space mission today!",
-    descriptionpop1:
-      '🚀☄Space Travelers\' Hub is a React-Redux app, built collaboratively, that fetches data from the SpaceX API and lets the user "reserve" rockets and missions for leisure or business travels. <br><br> To infinity and beyond!! 🌌',
-    liveversion: 'images/Icon.png',
-    liveLink: 'https://guileless-halva-645039.netlify.app/',
-    source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/Space-Travelers-Hub',
-    skills: ['HTML5', 'CSS3', 'Redux', 'React', 'JavaScript'],
-  },
-  {
     class: 'grid-item1 stories single',
-    snapshoot: 'images/Recipe App4.png',
-    Tonic: 'Recipe App',
-    offer: ['MYCAFE', 'Full Stack Dev', '2023'],
+    snapshoot: 'images/ATP.png',
+    Tonic: 'ATP App',
+    offer: ['GOVERNANCE', 'Full Stack Dev', '2024'],
     description:
-      'Looking for an easier way to manage your kitchen? Our Recipe app has got you covered! Keep track of all your recipes, ingredients, and inventory, and even generate a shopping list with just a few taps. Say goodbye to kitchen chaos and hello to stress-free cooking!',
-    descriptionpop1: `Introducing the Recipe App: Your all-in-one solution for effortless cooking! <br><br>
-    Seamlessly organize your recipes, ingredients, and pantry items. Craft delicious recipes with ease, generate smart shopping lists, and even share your culinary creations with the world. <br><br> Cooking has never been this convenient – simplify your kitchen adventures with our Recipe app!`,
+      'A hybrid civic‑tech platform enabling real‑time citizen participation in governance, driving an estimated 87% increase in community engagement during pilot programs.',
+    descriptionpop1:
+      'A full-stack hybrid platform engineered with Next.js, TypeScript, Prisma, PostgreSQL, and deployed seamlessly on Vercel. It features secure authentication via NextAuth, real-time messaging through Twilio, Redis-powered caching, and extended backend capabilities using Supabase. The frontend delivers a beautiful, animated, WCAG-compliant, responsive UI crafted with Tailwind CSS, DaisyUI, ShadcnUI, Framer Motion, and Recharts—enabling dynamic dashboards and interactive user experiences. Core features include role-based access control, encrypted data handling with Bcrypt, and scheduled tasks via Cron. Robust unit and integration testing are implemented using Jest to ensure reliability across both frontend and backend workflows.',
     liveversion: 'images/Icon.png',
-    liveLink: 'https://ror-recipeapp.onrender.com/',
+    liveLink: 'https://atparty.ke',
     source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/Recipe-App',
-    skills: ['HTML5', 'CSS3', 'Rspec', 'PostgreSQL', 'Ruby on Rails'],
+    sourceLink: 'https://github.com/BenMKT/atp-party',
+    skills: ['Jest', 'Next.js', 'Tailwind', 'NextAuth', 'TypeScript'],
   },
   {
-    class: 'grid-item1 grid-item3 tonic',
+    class: 'grid-item1 grid-item3 tonic description',
     snapshoot: 'images/BudgetApp Screenshot1.png',
     Tonic: 'Smart Budget App',
     offer: ['FINANCE', 'Full Stack Dev', '2023'],
     description:
-      '💰💼 Gain control of your finances by categorizing your transactions and unlocking valuable insights into your spending habits. Make smarter decisions with ease!',
-    descriptionpop1: `<br><br><br>
-    💰💼 Easily categorize your transactions and gain insights into your spending habits, empowering you to make informed financial decisions in a glance.`,
+      'A personal finance platform that delivers 20%+ gains in budgeting accuracy through automated transaction categorization and 95% test-backed coverage to ensure reliability, maintainability, and confidence in user-facing workflows.',
+    descriptionpop1:
+      'A budget management platform developed with Ruby on Rails, PostgreSQL, and  deployed on Render. It features automated transaction categorization and robust role-based access control via Devise and CanCanCan. The codebase is backed by RSpec and Capybara tests, achieving 95% coverage to ensure reliability, maintainability, and confidence in user-facing workflows.',
     liveversion: 'images/Icon.png',
     liveLink: 'https://smartbudgetapp-v1wv.onrender.com/',
     source: 'images/Vector.png',
     sourceLink: 'https://github.com/BenMKT/Budget-App',
-    skills: ['HTML5', 'CSS3', 'Rspec', 'PostgreSQL', 'Ruby on Rails'],
+    skills: ['Rspec', 'Devise', 'PostgreSQL', 'CanCanCan', 'Ruby on Rails'],
   },
   {
     class: 'grid-item1 stories',
-    snapshoot: 'images/Math Magician.png',
-    Tonic: 'Math Magician',
-    offer: ['EDUCATION', 'Front End Dev', '2023'],
+    snapshoot: 'images/SchoolFees.png',
+    Tonic: 'School Fees Management System',
+    offer: ['EDUCATION', 'Full Stack Dev', '2025'],
     description:
-      "Are you a math enthusiast? Check out this awesome website! It's a Single Page App (SPA) that lets you do quick calculations and read some fun math-related quotes. Give it a try!",
-    descriptionpop1: 'Math Magicians is a WebApp for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations while reading random math-related quotes.',
+      'A comprehensive education‑finance platform that streamlines school fees tracking for school administrators and parents, boosting collection and reconciliation efficiency by 55% and enhancing collaborative academic performance monitoring by 74% to deliver actionable financial and educational insights.',
+    descriptionpop1:
+      'A full-stack education finance platform built with Next.js, TypeScript, Radix UI, and deployed on Vercel. It leverages PostgreSQL for structured data storage and Prisma ORM for efficient querying. Authentication is handled securely via NextAuth, with Twilio integrated for messaging and the Google Sheets API used for real-time data synchronization with administrative workflows. The frontend features a responsive interface styled with Tailwind CSS and animated using Framer Motion. Interactive dashboards powered by Recharts provide live fee tracking and academic performance insights. Additional capabilities include role-based access controls, encrypted credential handling with Bcrypt, and intuitive management tools tailored for school administrators.',
     liveversion: 'images/Icon.png',
-    liveLink: 'https://benmkt-math-magicians.onrender.com',
+    liveLink: 'https://school-fees-virid.vercel.app/',
     source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/math-magicians',
-    skills: ['HTML5', 'CSS3', 'React', 'Redux', 'JavaScript'],
+    sourceLink: 'https://github.com/BenMKT/school-fees',
+    skills: [
+      'Next.js',
+      'TypeScript',
+      'Recharts',
+      'Tailwind',
+      'Google Sheets API',
+    ],
+  },
+  {
+    class: 'grid-item1 tonic description',
+    snapshoot: 'images/Space Travellers Hub.png',
+    Tonic: 'Space Travelers Hub',
+    offer: ['TRAVEL', 'Front End Dev', '2023'],
+    description:
+      "A dynamic space exploration platform that integrates SpaceX's live API to offer real-time booking for commercial and scientific space travel services.",
+    descriptionpop1:
+      "Developed through pair programming, Space Travelers' Hub is a single-page React application powered by Redux Toolkit and RTK Query for efficient state management and API consumption. Built with Vite for rapid development and optimized bundling, the platform interfaces with the SpaceX REST API to enable users to browse and reserve rockets and missions. Bookings are managed in a centralized Redux store, ensuring consistent state across views. The codebase is rigorously tested with Vitest to maintain reliability and confidence in user interactions.",
+    liveversion: 'images/Icon.png',
+    liveLink: 'https://guileless-halva-645039.netlify.app/',
+    source: 'images/Vector.png',
+    sourceLink: 'https://github.com/BenMKT/Space-Travelers-Hub',
+    skills: ['CSS3', 'React', 'Redux', 'Vitest', 'JavaScript'],
   },
 ];
 
@@ -111,7 +118,7 @@ worksection.forEach((project) => {
         </div>
       </div>`;
 });
-
+// popup section
 const popupContainer = document.querySelector('.popupContainer');
 
 function createPop() {
