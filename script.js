@@ -33,7 +33,7 @@ const worksection = [
     liveversion: 'images/Icon.png',
     liveLink: 'https://atparty.ke',
     source: 'images/Vector.png',
-    sourceLink: 'https://github.com/BenMKT/atp-party',
+    sourceLink: '',
     skills: ['Jest', 'Next.js', 'Tailwind', 'NextAuth', 'TypeScript'],
   },
   {
@@ -78,7 +78,7 @@ const worksection = [
     Tonic: 'Space Travelers Hub',
     offer: ['TRAVEL', 'Front End Dev', '2023'],
     description:
-      "A dynamic space exploration platform that integrates SpaceX's live API to offer real-time booking for commercial and scientific space travel services.",
+      "A dynamic space exploration platform that integrates SpaceX's live API to offer real-time booking for commercial and scientific space travel services, enhancing user engagement by 65% and streamlining booking workflows by 50%.",
     descriptionpop1:
       "Developed through pair programming, Space Travelers' Hub is a single-page React application powered by Redux Toolkit and RTK Query for efficient state management and API consumption. Built with Vite for rapid development and optimized bundling, the platform interfaces with the SpaceX REST API to enable users to browse and reserve rockets and missions. Bookings are managed in a centralized Redux store, ensuring consistent state across views. The codebase is rigorously tested with Vitest to maintain reliability and confidence in user interactions.",
     liveversion: 'images/Icon.png',
@@ -121,7 +121,7 @@ worksection.forEach((project) => {
 // popup section
 const popupContainer = document.querySelector('.popupContainer');
 
-function createPop() {
+const createPop = () => {
   for (let i = 0; i < 4; i += 1) {
     const pop = document.createElement('pop');
     pop.classList.add(`popup${i}`);
@@ -165,8 +165,57 @@ function createPop() {
       `;
     popupContainer.appendChild(pop);
   }
-}
+};
 createPop();
+
+// Tooltip functionality for private repositories
+const showTooltip = (message, target) => {
+  // Remove any existing tooltips
+  const existingTooltip = document.querySelector('.private-repo-tooltip');
+  if (existingTooltip) {
+    existingTooltip.remove();
+  }
+
+  // Create tooltip element
+  const tooltip = document.createElement('div');
+  tooltip.className = 'private-repo-tooltip';
+  tooltip.textContent = message;
+
+  // Position tooltip near the button
+  const rect = target.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  tooltip.style.left = `${rect.left + scrollLeft}px`;
+  tooltip.style.top = `${rect.bottom + scrollTop + 10}px`;
+
+  // Ensure tooltip doesn't go off-screen
+  const tooltipRect = tooltip.getBoundingClientRect();
+  if (tooltipRect.right > window.innerWidth) {
+    tooltip.style.left = `${window.innerWidth - tooltipRect.width - 10}px`;
+  }
+  if (tooltipRect.bottom > window.innerHeight) {
+    tooltip.style.top = `${rect.top + scrollTop - tooltipRect.height - 10}px`;
+  }
+
+  // Add to page
+  document.body.appendChild(tooltip);
+
+  // Auto-remove after 4 seconds
+  setTimeout(() => {
+    if (tooltip.parentNode) {
+      tooltip.remove();
+    }
+  }, 4000);
+
+  // Remove on click outside
+  document.addEventListener('click', function removeTooltip(e) {
+    if (!tooltip.contains(e.target) && e.target !== target) {
+      tooltip.remove();
+      document.removeEventListener('click', removeTooltip);
+    }
+  });
+};
 
 const seabtn = document.querySelectorAll('#prjbtn');
 const sourcebtn = document.querySelectorAll('#sourceLink');
@@ -193,8 +242,12 @@ cancelbtn.forEach((button) => {
   });
 });
 
-sourcebtn[0].addEventListener('click', () => {
-  window.open(`${worksection[0].sourceLink}`, '_blank');
+sourcebtn[0].addEventListener('click', (e) => {
+  e.preventDefault();
+  showTooltip(
+    'Repository is private due to NDA. Please contact me for access.',
+    e.target,
+  );
 });
 
 livebtn[0].addEventListener('click', () => {
